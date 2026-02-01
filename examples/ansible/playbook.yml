@@ -1,0 +1,107 @@
+---
+# Wazuh Agent Deployment with Ansible
+# Prerequisites: ansible-core >= 2.10
+# Usage: ansible-playbook -i hosts.ini playbook.yml
+
+- name: Deploy Wazuh Agents
+  hosts: wazuh_agents
+  become: yes
+  gather_facts: yes
+
+  vars:
+    wazuh_manager_ip: "{{ wazuh_manager_ip | default('10.0.0.1') }}"
+    wazuh_agent_name: "{{ inventory_hostname }}"
+    wazuh_agent_group: "{{ wazuh_agent_group | default('default') }}"
+
+  pre_tasks:
+    - name: Update package cache
+      package:
+        update_cache: yes
+      when: ansible_os_family in ['Debian', 'RedHat']
+
+    - name: Install dependencies
+      package:
+        name:
+          - curl
+          - wget
+          - gnupg
+        state: present
+
+  tasks:
+    - name: Add Wazuh GPG key
+      shell: |
+        curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | gpg --import
+      when: ansible_os_family == 'Debian'
+
+    - name: Add Wazuh repository (Debian)
+      shell: |
+        echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | \
+        tee /etc/apt/sources.list.d/wazuh.list
+      when: ansible_os_family == 'Debian'
+
+    - name: Add Wazuh repository (RedHat)
+      shell: |
+        cat > /etc/yum.repos.d/wazuh.repo <<EOF
+        [wazuh]
+        gpgcheck=1
+        gpgkey=https://packages.wazuh.com/key/GPG-KEY-WAZUH
+        enabled=1
+        name=EL-\$releasever - Wazuh
+        baseurl=https://packages.wazuh.com/4.x/yum/
+        protect=1
+        EOF
+      when: ansible_os_family == 'RedHat'
+
+    - name: Update package cache (after repo add)
+      package:
+        update_cache: yes
+      when: ansible_os_family in ['Debian', 'RedHat']
+
+    - name: Install Wazuh Agent
+      package:
+        name: wazuh-agent
+        state: present
+      notify: Restart Wazuh Agent
+
+    - name: Configure Wazuh Agent
+      template:
+        src: ossec.conf.j2
+        dest: /var/ossec/etc/ossec.conf
+        owner: root
+        group: root
+        mode: '0640'
+      notify: Restart Wazuh Agent
+
+    - name: Enable and start Wazuh Agent
+      service:
+        name: wazuh-agent
+        state: started
+        enabled: yes
+
+  handlers:
+    - name: Restart Wazuh Agent
+      service:
+        name: wazuh-agent
+        state: restarted
+
+  post_tasks:
+    - name: Verify agent status
+      command: /var/ossec/bin/wazuh-control status
+      register: agent_status
+      changed_when: false
+
+    - name: Display agent status
+      debug:
+        msg: "{{ agent_status.stdout_lines }}"
+
+# hosts.ini example:
+# [wazuh_agents]
+# server1.example.com wazuh_agent_name=server1
+# server2.example.com wazuh_agent_name=server2
+# server3.example.com wazuh_agent_name=server3
+#
+# [wazuh_agents:vars]
+# ansible_user=ubuntu
+# ansible_ssh_private_key_file=~/.ssh/id_rsa
+# wazuh_manager_ip=10.0.0.1
+# wazuh_agent_group=linux-servers

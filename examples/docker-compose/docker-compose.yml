@@ -1,0 +1,80 @@
+# Wazuh Single-Node Docker Compose - Development/Testing
+# This is a simplified setup for testing and learning
+# For production, use: https://github.com/wazuh/wazuh-docker
+
+version: '3.8'
+
+services:
+  wazuh:
+    image: wazuh/wazuh:latest
+    environment:
+      - INDEXER_URL=https://wazuh-indexer:9200
+      - INDEXER_USERNAME=admin
+      - INDEXER_PASSWORD=SecurePassword123!
+      - FILEBEAT_SSL_VERIFICATION_MODE=full
+      - SSL_CERTIFICATE_AUTHORITIES=/etc/ssl/certs/ca.crt
+      - SSL_CERTIFICATE=/etc/ssl/certs/wazuh.crt
+      - SSL_KEY=/etc/ssl/private/wazuh.key
+    ports:
+      - "1514:1514"
+      - "1515:1515"
+      - "514:514/udp"
+      - "55000:55000"
+    volumes:
+      - wazuh-api-path:/var/ossec/api/configuration
+      - wazuh-etc-path:/var/ossec/etc
+      - wazuh-var-path:/var/ossec/var
+    networks:
+      - wazuh-network
+    depends_on:
+      - wazuh-indexer
+
+  wazuh-indexer:
+    image: wazuh/wazuh-indexer:latest
+    environment:
+      - INDEXER_SECURITY_SSL_HTTP_ENABLED=true
+      - INDEXER_SECURITY_SSL_HTTP_PEMCERT_PATH=/usr/share/wazuh-indexer/certs/node1.pem
+      - INDEXER_SECURITY_SSL_HTTP_PEMKEY_PATH=/usr/share/wazuh-indexer/certs/node1-key.pem
+      - INDEXER_SECURITY_SSL_HTTP_PEMTRUSTEDCAS_PATH=/usr/share/wazuh-indexer/certs/root-ca.pem
+      - CLUSTER_NODE_NAME=node-1
+    ports:
+      - "9200:9200"
+    volumes:
+      - indexer-data:/var/lib/wazuh-indexer/nodes/0
+    networks:
+      - wazuh-network
+
+  wazuh-dashboard:
+    image: wazuh/wazuh-dashboard:latest
+    environment:
+      - INDEXER_USERNAME=admin
+      - INDEXER_PASSWORD=SecurePassword123!
+      - WAZUH_API_URL=https://wazuh:55000
+      - WAZUH_API_USERNAME=wazuh
+      - WAZUH_API_PASSWORD=SecurePassword123!
+    ports:
+      - "443:5601"
+    volumes:
+      - dashboard-etc:/usr/share/wazuh-dashboard/data/wazuh/config
+    networks:
+      - wazuh-network
+    depends_on:
+      - wazuh-indexer
+      - wazuh
+
+volumes:
+  wazuh-api-path:
+  wazuh-etc-path:
+  wazuh-var-path:
+  indexer-data:
+  dashboard-etc:
+
+networks:
+  wazuh-network:
+    driver: bridge
+
+# USAGE:
+# 1. docker-compose up
+# 2. Access: https://localhost:443
+# 3. Default credentials: admin / SecurePassword123!
+# 4. For production: See https://github.com/wazuh/wazuh-docker
