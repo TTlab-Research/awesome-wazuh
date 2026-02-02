@@ -127,6 +127,7 @@ Connect Wazuh with external platforms for alerting, ticketing, threat intelligen
 
 - 🟡 [Shuffle SOAR](https://shuffle.io/) - Open-source SOAR with Wazuh support
 - 🟢 [Shuffle + Teams Integration](https://wazuh.com/blog/integrating-wazuh-with-microsoft-teams-using-shuffle/) - SOAR-based Teams alerting
+- 🟡 [Automated Threat Detection & Response (Medium)](https://medium.com/@naseefhussain83/automated-threat-detection-response-using-wazuh-shuffle-777bee8370fc) - Real-world Wazuh + Shuffle threat response automation
 
 ## Compliance
 
