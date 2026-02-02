@@ -14,7 +14,9 @@ Wazuh is a free, open-source security monitoring platform for threat prevention,
   - [Terraform / OpenTofu](#terraform--opentofu)
   - [Ansible](#ansible)
   - [Cloud Platforms](#cloud-platforms)
+  - [CI/CD & Testing](#cicd--testing)
 - [Rules & Detection](#rules--detection)
+  - [Community Rules](#community-rules)
   - [Synology NAS](#synology-nas)
   - [Detection Modules](#detection-modules)
 - [Integrations](#integrations)
@@ -23,8 +25,11 @@ Wazuh is a free, open-source security monitoring platform for threat prevention,
   - [Threat Intelligence](#threat-intelligence)
   - [Cloud Platforms](#cloud-platforms-1)
   - [SOAR](#soar)
+  - [Custom Integrations](#custom-integrations)
+- [Tools & Utilities](#tools--utilities)
 - [Compliance](#compliance)
 - [Training & Certification](#training--certification)
+- [Guides & Tutorials](#guides--tutorials)
 - [Ambassador Program](#ambassador-program)
 - [Community](#community)
 - [Contributing](#contributing)
@@ -74,11 +79,22 @@ Wazuh is a free, open-source security monitoring platform for threat prevention,
 - 🟢 [GCP Deployment](https://documentation.wazuh.com/current/cloud-security/gcp/index.html) - Pub/Sub and Cloud Storage integration
 - 🟢 [Virtual Machines (OVA/AMI)](https://github.com/wazuh/wazuh-virtual-machines) - Pre-built images for quick POC
 
+### CI/CD & Testing
+
+- 🟢 [Wazuh QA](https://github.com/wazuh/wazuh-qa) - Automated testing and CI/CD infrastructure
+
 ## Rules & Detection
 
 - 🟢 [Rules Documentation](https://documentation.wazuh.com/current/user-manual/ruleset/index.html) - Rule syntax and optimization
 - 🟢 [Custom Rules Guide](https://documentation.wazuh.com/current/user-manual/ruleset/custom.html) - Writing and testing custom rules
 - 🟢 [Official Ruleset](https://github.com/wazuh/wazuh-ruleset) - Complete rule repository
+
+### Community Rules
+
+- 🟡 [socfortress/Wazuh-Rules](https://github.com/socfortress/Wazuh-Rules) - Community rule collection
+- 🟡 [Ghost47-coder/Wazuh-Rules](https://github.com/Ghost47-coder/Wazuh-Rules) - Custom rule set and decoders
+- 🟡 [Fortigate Rules & Decoders](https://github.com/alextibor/wazuh-fortigate-rules-decoders) - Fortigate device monitoring
+- 🟡 [Unifi Decoder](https://github.com/EvilForge/wazuh-unifi-decoder) - Ubiquiti Unifi network monitoring
 
 ### Synology NAS
 
@@ -128,6 +144,22 @@ Connect Wazuh with external platforms for alerting, ticketing, threat intelligen
 - 🟢 [Shuffle + Teams Integration](https://wazuh.com/blog/integrating-wazuh-with-microsoft-teams-using-shuffle/) - SOAR-based Teams alerting
 - 🟡 [Automated Threat Detection & Response (Medium)](https://medium.com/@naseefhussain83/automated-threat-detection-response-using-wazuh-shuffle-777bee8370fc) - Real-world Wazuh + Shuffle threat response automation
 
+### Custom Integrations
+
+- 🟡 [wazuh2thehive](https://github.com/crow1011/wazuh2thehive) - TheHive case management integration
+- 🟡 [wazuh-opencti](https://github.com/juaromu/wazuh-opencti) - OpenCTI threat intelligence platform
+- 🟡 [wazuh-integrations](https://github.com/maikroservice/wazuh-integrations) - Collection of custom integrations
+- 🟡 [Prometheus Exporter](https://github.com/pyToshka/wazuh-prometheus-exporter) - Prometheus metrics and monitoring
+- 🟡 [Telegram Alerting](https://github.com/bayusky/wazuh-telegram) - Telegram notification script
+- 🟡 [Custom Telegram](https://github.com/eugenehr/wazuh-custom-telegram) - Advanced Telegram alert formatting
+- 🟡 [wazuh-nmap](https://github.com/juaromu/wazuh-nmap) - Nmap network scan integration
+
+## Tools & Utilities
+
+- 🟡 [Wazuh Tools](https://github.com/branchnetconsulting/wazuh-tools) - Collection of operational utility scripts
+- 🟡 [MCP Server Wazuh](https://github.com/gbrigandi/mcp-server-wazuh) - Model Context Protocol server for Wazuh
+- 🟡 [Wazuh MCP Server](https://github.com/gensecaihq/Wazuh-MCP-Server) - Alternative MCP implementation
+
 ## Compliance
 
 Map Wazuh capabilities to regulatory frameworks.
@@ -147,6 +179,13 @@ Map Wazuh capabilities to regulatory frameworks.
 - 🟡 [Udemy - Complete Wazuh Course](https://www.udemy.com/course/complete-wazuh-course/) - Beginner to advanced
 - 🟡 [initMAX - Wazuh Training](https://www.initmax.com/wazuh-training/) - Certified Wazuh Professional credential
 - 🟡 [SIEM Intelligence - Certified Wazuh Administrator](https://www.siemintelligence.com/wazuh-admin-training) - CWA credential
+
+## Guides & Tutorials
+
+Community-contributed guides for specific use cases and advanced configurations.
+
+- 🟡 [SOAR Flow Guide](https://github.com/malwarekid/SOAR-Flow) - SOAR orchestration and automation patterns
+- 🟡 [Bruteforce Detection Guide](https://github.com/hasanaijaz/Wazuh-SIEM-Bruteforce-Detection) - Detecting and responding to brute force attacks
 
 ## Ambassador Program
 
