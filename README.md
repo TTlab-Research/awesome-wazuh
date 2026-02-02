@@ -86,7 +86,6 @@ Monitor Synology DSM systems for security events, file integrity, and access log
 
 - 🟡 [st0rm-cr0w Synology Rules](https://github.com/st0rm-cr0w/wazuh-synology-dsm-nas-decoder-and-rules) - DSM decoder and rules
 - 🟡 [Tomo-9925 Synology Rules](https://github.com/Tomo-9925/wazuh-synology-dsm-decoder-and-rules) - Alternative DSM decoder implementation
-- 🟡 [Synology Monitoring Guide](https://medium.com/@pepijnvissers/using-wazuh-on-a-synology-nas-to-monitor-external-vpses-yes-we-can-cf9a12d24d28) - Real-world deployment walkthrough
 
 ### Detection Modules
 
@@ -125,9 +124,8 @@ Connect Wazuh with external platforms for alerting, ticketing, threat intelligen
 
 ### SOAR
 
-- 🟡 [Shuffle SOAR](https://shuffle.io/) - Open-source SOAR with Wazuh support
+- 🟡 [Shuffle SOAR](https://shuffler.io/) - Open-source SOAR with Wazuh support
 - 🟢 [Shuffle + Teams Integration](https://wazuh.com/blog/integrating-wazuh-with-microsoft-teams-using-shuffle/) - SOAR-based Teams alerting
-- 🟡 [Automated Threat Detection & Response (Medium)](https://medium.com/@naseefhussain83/automated-threat-detection-response-using-wazuh-shuffle-777bee8370fc) - Real-world Wazuh + Shuffle threat response automation
 
 ## Compliance
 
@@ -144,8 +142,7 @@ Map Wazuh capabilities to regulatory frameworks.
 ## Training & Certification
 
 - 🟢 [Official Training Courses](https://wazuh.com/services/training-courses/) - 4-day authorized certification program
-- 🟢 [Wazuh Academy](https://academy.wazuh.com/) - Free online training
-- 🟡 [YouTube Tutorials](https://www.youtube.com/@wazuh_official) - Official video guides
+- 🟡 [YouTube Tutorials](https://www.youtube.com/c/WazuhProject) - Official video guides
 - 🟡 [Udemy - Complete Wazuh Course](https://www.udemy.com/course/complete-wazuh-course/) - Beginner to advanced
 - 🟡 [initMAX - Wazuh Training](https://www.initmax.com/wazuh-training/) - Certified Wazuh Professional credential
 - 🟡 [SIEM Intelligence - Certified Wazuh Administrator](https://www.siemintelligence.com/wazuh-admin-training) - CWA credential
@@ -154,7 +151,7 @@ Map Wazuh capabilities to regulatory frameworks.
 
 Represent Wazuh in your region. Become an ambassador and share your expertise.
 
-- 🟢 [Wazuh Ambassador Program](https://wazuh.com/ambassadors/) - How to become an ambassador
+- 🟢 [Wazuh Ambassador Program](https://wazuh.com/community/) - How to become an ambassador
 - 📧 Contact: ambassadors@wazuh.com - Apply to join the program
 - [Ambassador Activities Guide](docs/ambassador.md) - Content creation, speaking, training, partnerships
 
