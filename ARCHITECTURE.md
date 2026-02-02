@@ -40,7 +40,7 @@ awesome-wazuh/
 ### 1. **Awesome-* Standard**
 - README.md is the single entry point (not scattered across docs/)
 - Pure link index format (link + 1-2 line description)
-- Badge system: 🔴 Official | 🟢 Community
+- Badge system: 🟢 Official | 🟡 Community
 - No content duplication of official Wazuh documentation
 - Link to official docs, not replicate them
 
