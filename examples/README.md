@@ -1,88 +1,88 @@
-# Esempi Wazuh & Ambienti di Test
+# Wazuh Examples & Test Environments
 
-Template e configurazioni pronti all'uso per eseguire il deploy di Wazuh in diversi ambienti.
+Ready-to-use templates and configurations for deploying Wazuh in various environments.
 
-## 📁 Struttura della Directory
+## 📁 Directory Structure
 
 ```
 examples/
-├── docker-compose/        # Deployment basati su container
-├── terraform/            # Infrastructure-as-Code (Terraform/OpenTofu)
-├── ansible/             # Playbook di deployment multi-host
-└── README.md            # Questo file
+├── docker-compose/        # Container-based deployments
+├── terraform/             # Infrastructure-as-Code (Terraform/OpenTofu)
+├── ansible/              # Multi-host deployment playbooks
+└── README.md             # This file
 ```
 
 ---
 
 ## 🐳 Docker Compose
 
-**Migliore per**: Sviluppo locale, testing, dimostrazioni POC
+**Best for**: Local development, testing, POC demonstrations
 
-### Avvio Rapido
+### Quick Start
 ```bash
 cd examples/docker-compose
 docker-compose up -d
 ```
 
-### Accesso
+### Access
 - **Dashboard**: https://localhost:443
-- **Credenziali**: admin / SecurePassword123! (cambia in produzione)
+- **Credentials**: admin / SecurePassword123! (change in production)
 - **API**: https://localhost:55000
 
-### Caratteristiche
+### Features
 - ✅ Wazuh Manager
 - ✅ Wazuh Indexer (OpenSearch)
 - ✅ Wazuh Dashboard
-- ✅ Stack completo in 30 secondi
+- ✅ Complete stack in 30 seconds
 
-### Requisiti
-- Docker Desktop o Docker Engine
-- 4GB RAM minimo
-- 20GB spazio disco
+### Requirements
+- Docker Desktop or Docker Engine
+- 4GB RAM minimum
+- 20GB disk space
 
-### Note
-- Setup single-node
-- Per multi-node: Vedi [wazuh/wazuh-docker](https://github.com/wazuh/wazuh-docker)
-- Certificati SSL auto-generati
+### Notes
+- Single-node setup
+- For multi-node: See [wazuh/wazuh-docker](https://github.com/wazuh/wazuh-docker)
+- SSL certificates auto-generated
 
 ---
 
 ## 🏗️ Terraform / OpenTofu
 
-**Migliore per**: Infrastructure-as-Code, deployment di agenti in massa, GitOps
+**Best for**: Infrastructure-as-Code, mass agent deployment, GitOps
 
-### Compatibilità
-✅ **Funziona con Terraform e OpenTofu** - usa quello che preferisci
+### Compatibility
+✅ **Works with Terraform and OpenTofu** - use whichever you prefer
 
-### Avvio Rapido
+### Quick Start
 ```bash
 cd examples/terraform
 
-# Usando Terraform
+# Using Terraform
 terraform init
 terraform plan
 terraform apply
 
-# OPPURE usando OpenTofu
+# OR using OpenTofu
 tofu init
 tofu plan
 tofu apply
 ```
 
-### Caratteristiche
-- ✅ Creazione di gruppi agenti
-- ✅ Provisioning agenti in massa
-- ✅ Nomi agenti dinamici
-- ✅ Gestione dello stato
+### Features
+- ✅ Agent group creation
+- ✅ Mass agent provisioning
+- ✅ Dynamic agent naming
+- ✅ State management
 
 ### Provider
-- **Fonte**: `grulicht/wazuh` (mantenuto dalla community)
+- **Source**: `grulicht/wazuh` (community-maintained)
 - **Terraform Registry**: https://registry.terraform.io/providers/grulicht/wazuh
 - **GitHub**: https://github.com/grulicht/terraform-provider-wazuh
 
-### Variabili
+### Variables
 
-Crea `terraform.tfvars`:
+Create `terraform.tfvars`:
 ```hcl
 wazuh_address  = "wazuh.example.com"
 wazuh_username = "admin"
@@ -90,27 +90,27 @@ wazuh_password = "your-secure-password"
 agent_count    = 10
 ```
 
-### Requisiti
-- Terraform >= 1.0 OPPURE OpenTofu >= 1.6
-- Wazuh Manager in esecuzione
-- Credenziali API
+### Requirements
+- Terraform >= 1.0 OR OpenTofu >= 1.6
+- Running Wazuh Manager
+- API credentials
 
-### Note
-- ⚠️ Nessun provider ufficiale Wazuh ancora ([richiesta](https://github.com/wazuh/wazuh/issues/20176))
-- Provider community attivamente mantenuto
-- Perfetto per flussi di lavoro GitOps
+### Notes
+- ⚠️ No official Wazuh provider yet ([request](https://github.com/wazuh/wazuh/issues/20176))
+- Community provider actively maintained
+- Perfect for GitOps workflows
 
 ---
 
 ## 🔧 Ansible
 
-**Migliore per**: Deployment multi-host, gestione della configurazione, infrastruttura Ansible esistente
+**Best for**: Multi-host deployment, configuration management, existing Ansible infrastructure
 
-### Avvio Rapido
+### Quick Start
 ```bash
 cd examples/ansible
 
-# Crea file hosts
+# Create hosts file
 cat > hosts.ini <<EOF
 [wazuh_agents]
 server1.example.com wazuh_agent_name=server1
@@ -122,60 +122,60 @@ ansible_user=ubuntu
 wazuh_manager_ip=10.0.0.1
 EOF
 
-# Esegui playbook
+# Run playbook
 ansible-playbook -i hosts.ini playbook.yml
 ```
 
-### Caratteristiche
-- ✅ Supporto multi-OS (Debian, RedHat, Ubuntu, CentOS)
-- ✅ Gestione repository
-- ✅ Installazione & configurazione agenti
-- ✅ Gestione servizi
-- ✅ Verifica salute
+### Features
+- ✅ Multi-OS support (Debian, RedHat, Ubuntu, CentOS)
+- ✅ Repository management
+- ✅ Agent installation & configuration
+- ✅ Service management
+- ✅ Health verification
 
-### Sistemi Operativi Supportati
+### Supported Operating Systems
 - ✅ Ubuntu 18.04+
 - ✅ Debian 9+
 - ✅ CentOS 7+
 - ✅ Red Hat 7+
 - ✅ Amazon Linux 2
 
-### Requisiti
+### Requirements
 - Ansible 2.10+
-- Accesso SSH ai host target
-- Privilegi sudo
-- Wazuh Manager in esecuzione
+- SSH access to target hosts
+- Sudo privileges
+- Running Wazuh Manager
 
-### Risorse Ufficiali
+### Official Resources
 - **GitHub**: https://github.com/wazuh/wazuh-ansible
 - **Docs**: https://documentation.wazuh.com/current/deployment-options/deploying-with-ansible/index.html
 
-### Note
-- Usa branch di rilascio per la produzione
-- Il branch main potrebbe contenere funzionalità sperimentali
-- Ufficialmente mantenuto da Wazuh
+### Notes
+- Use release branches for production
+- Main branch may contain experimental features
+- Officially maintained by Wazuh
 
 ---
 
-## 🚀 Scenari di Deployment
+## 🚀 Deployment Scenarios
 
-### Scenario 1: Dev/Test Veloce (Docker Compose)
-**Tempo**: 5 minuti | **Complessità**: Bassa
+### Scenario 1: Quick Dev/Test (Docker Compose)
+**Time**: 5 minutes | **Complexity**: Low
 ```bash
 cd examples/docker-compose
 docker-compose up
 ```
 
-### Scenario 2: Lab Multi-Server (Ansible)
-**Tempo**: 15 minuti | **Complessità**: Media
+### Scenario 2: Multi-Server Lab (Ansible)
+**Time**: 15 minutes | **Complexity**: Medium
 ```bash
 cd examples/ansible
-# Aggiorna hosts.ini
+# Update hosts.ini
 ansible-playbook -i hosts.ini playbook.yml
 ```
 
-### Scenario 3: Produzione IaC (Terraform)
-**Tempo**: 20 minuti | **Complessità**: Alta
+### Scenario 3: Production IaC (Terraform)
+**Time**: 20 minutes | **Complexity**: High
 ```bash
 cd examples/terraform
 terraform apply
@@ -183,102 +183,102 @@ terraform apply
 
 ---
 
-## 📊 Requisiti di Risorse
+## 📊 Resource Requirements
 
-| Metodo | CPU | Memoria | Disco | Rete |
+| Method | CPU | Memory | Disk | Network |
 |--------|-----|--------|------|---------|
-| **Docker Compose** | 2+ core | 4GB+ | 20GB | Locale/Remota |
-| **Ansible** | 0,5 core/agente | 100MB/agente | 500MB/agente | SSH |
+| **Docker Compose** | 2+ core | 4GB+ | 20GB | Local/Remote |
+| **Ansible** | 0.5 core/agent | 100MB/agent | 500MB/agent | SSH |
 | **Terraform** | N/A | N/A | N/A | API |
 
 ---
 
-## 🔒 Note di Sicurezza
+## 🔒 Security Notes
 
-### Credenziali
+### Credentials
 ```bash
-# NON hardcodare le password
-# Usa variabili d'ambiente o gestione segreti:
+# DO NOT hardcode passwords
+# Use environment variables or secrets management:
 
-# Opzione 1: Variabili d'ambiente
+# Option 1: Environment variables
 export TF_VAR_wazuh_password=$(op item get "Wazuh Password" --fields password)
 
-# Opzione 2: Integrazione 1Password
+# Option 2: 1Password integration
 op run --no-masking -- terraform apply
 
-# Opzione 3: Vault
+# Option 3: Vault
 vault kv get secret/wazuh
 ```
 
 ### SSL/TLS
-- ✅ Docker Compose: Self-signed (auto-generato)
-- ✅ Ansible: Configura in ossec.conf
-- ✅ Terraform: Gestito da API Wazuh
+- ✅ Docker Compose: Self-signed (auto-generated)
+- ✅ Ansible: Configure in ossec.conf
+- ✅ Terraform: Managed by Wazuh API
 
-### Sicurezza di Rete
-- ✅ Usa VPC/subnet
-- ✅ Ristringe SSH (Ansible)
-- ✅ Usa IP private per agenti
-- ✅ Abilita regole firewall
+### Network Security
+- ✅ Use VPC/subnets
+- ✅ Restrict SSH (Ansible)
+- ✅ Use private IPs for agents
+- ✅ Enable firewall rules
 
 ---
 
 ## 🐛 Troubleshooting
 
-### Docker Compose non si avvia
+### Docker Compose Won't Start
 ```bash
-# Controlla i log
+# Check logs
 docker-compose logs wazuh
 docker-compose logs wazuh-indexer
 
-# Ricompila immagini
+# Rebuild images
 docker-compose up --build
 ```
 
-### Problemi di Connessione Ansible
+### Ansible Connection Issues
 ```bash
-# Testa connettività
+# Test connectivity
 ansible all -i hosts.ini -m ping
 
-# Controlla SSH
+# Check SSH
 ssh -v ubuntu@server1.example.com
 
-# Verifica sudo
+# Verify sudo
 ansible all -i hosts.ini -m shell -a "whoami" -b
 ```
 
-### Errori Terraform
+### Terraform Errors
 ```bash
-# Abilita debug logging
+# Enable debug logging
 export TF_LOG=DEBUG
 terraform apply
 
-# Valida configurazione
+# Validate configuration
 terraform validate
 terraform fmt -recursive
 ```
 
 ---
 
-## 📚 Ulteriori Risorse
+## 📚 Additional Resources
 
-- **Wazuh Docker Ufficiale**: https://github.com/wazuh/wazuh-docker
+- **Official Wazuh Docker**: https://github.com/wazuh/wazuh-docker
 - **Wazuh Kubernetes**: https://github.com/wazuh/wazuh-kubernetes
 - **Wazuh Ansible**: https://github.com/wazuh/wazuh-ansible
-- **Provider Terraform**: https://github.com/grulicht/terraform-provider-wazuh
-- **Guida al Deployment**: ../docs/DEPLOYMENT_GUIDE.md
+- **Terraform Provider**: https://github.com/grulicht/terraform-provider-wazuh
+- **Deployment Guide**: ../docs/DEPLOYMENT_GUIDE.md
 
 ---
 
-## 💡 Suggerimenti
+## 💡 Tips
 
-1. **Inizia semplice**: Usa Docker Compose per imparare
-2. **Poi automatizza**: Passa a Terraform/Ansible
-3. **Mescola e abbina**: Docker per dashboard, Ansible per agenti
-4. **Controllo di versione**: Commit IaC a git
-5. **GitOps**: Usa Terraform nella pipeline CI/CD
+1. **Start simple**: Use Docker Compose to learn
+2. **Then automate**: Move to Terraform/Ansible
+3. **Mix and match**: Docker for dashboard, Ansible for agents
+4. **Version control**: Commit IaC to git
+5. **GitOps**: Use Terraform in CI/CD pipeline
 
 ---
 
-**Ultimo Aggiornamento**: 31 gennaio 2026
-**Stato**: Tutti gli esempi testati ✅
+**Last Updated**: January 31, 2026
+**Status**: All examples tested ✅

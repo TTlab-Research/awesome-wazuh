@@ -1,184 +1,184 @@
-# Contribuire a Awesome Wazuh
+# Contributing to Awesome Wazuh
 
-Apprezziamo il tuo interesse nel contribuire a **Awesome Wazuh**! Questo documento fornisce linee guida per mantenere la qualità e la coerenza nell'elenco.
+We appreciate your interest in contributing to **Awesome Wazuh**! This document provides guidelines to maintain quality and consistency in the list.
 
-## ✅ Prima di Contribuire
+## ✅ Before Contributing
 
-1. **Verifica tutti i link sono accessibili** - Testa gli URL prima di inviare
-2. **Controlla i duplicati** - Assicurati che la risorsa non sia già elencata
-3. **Segui il formato** - Mantieni la coerenza con le voci esistenti
-4. **Fornisci contesto** - Aggiungi una breve descrizione del valore della risorsa
-5. **Assicura rilevanza** - Le risorse devono essere direttamente correlate a Wazuh
+1. **Verify all links are accessible** - Test URLs before submitting
+2. **Check for duplicates** - Ensure the resource isn't already listed
+3. **Follow the format** - Maintain consistency with existing entries
+4. **Provide context** - Add a brief description of the resource's value
+5. **Ensure relevance** - Resources must be directly related to Wazuh
 
-## 📋 Tipi di Contribuzione
+## 📋 Types of Contribution
 
-### Aggiunta di Risorse
-- Documentazione ufficiale o blog
-- Guide e tutorial della community
-- Strumenti e integrazioni
-- Corsi di formazione o certificazioni
-- Progetti open-source
+### Adding Resources
+- Official documentation or blog posts
+- Community guides and tutorials
+- Tools and integrations
+- Training courses or certifications
+- Open-source projects
 
 **Template:**
 ```markdown
-- **[Titolo Risorsa](https://link-alla-risorsa)** - Breve descrizione che spiega il valore
-  - Opzionale: Livello di competenza (Principiante/Intermedio/Avanzato)
-  - Opzionale: Tipo (Guida/Strumento/Integrazione/etc.)
+- **[Resource Title](https://resource-link)** - Brief description explaining the value
+  - Optional: Skill level (Beginner/Intermediate/Advanced)
+  - Optional: Type (Guide/Tool/Integration/etc.)
 ```
 
-### Miglioramento del Contenuto Esistente
-- Correzione di link interrotti
-- Aggiornamento di informazioni obsolete
-- Chiarimento delle descrizioni
-- Aggiunta di contesto mancante
+### Improving Existing Content
+- Fixing broken links
+- Updating obsolete information
+- Clarifying descriptions
+- Adding missing context
 
-### Aggiunta di Ambienti di Test
-- File Docker Compose
-- Moduli Terraform/OpenTofu
-- Playbook Ansible
-- Altre Infrastructure-as-Code
+### Adding Test Environments
+- Docker Compose files
+- Terraform/OpenTofu modules
+- Ansible playbooks
+- Other Infrastructure-as-Code
 
-## 🔍 Standard di Qualità
+## 🔍 Quality Standards
 
-### Verifica del Link
-- ✅ Il link deve essere accessibile e restituire HTTP 200
-- ✅ Il link deve puntare direttamente alla risorsa (nessun reindirizzamento se possibile)
-- ✅ Per i PDF: verifica che il file non sia corrotto
-- ✅ Per GitHub: verifica che il repo sia attivo e mantenuto
+### Link Verification
+- ✅ Link must be accessible and return HTTP 200
+- ✅ Link must point directly to the resource (no redirects if possible)
+- ✅ For PDFs: verify the file is not corrupted
+- ✅ For GitHub: verify the repo is active and maintained
 
-### Qualità della Descrizione
-- ✅ Chiara e concisa (massimo 1-2 frasi)
-- ✅ Spiega il valore per i professionisti Wazuh
-- ✅ Nessun fluff di marketing o hype eccessivo
-- ✅ Rappresenta accuratamente la risorsa
+### Description Quality
+- ✅ Clear and concise (maximum 1-2 sentences)
+- ✅ Explains the value for Wazuh professionals
+- ✅ No marketing fluff or excessive hype
+- ✅ Accurately represents the resource
 
-### Organizzazione
-- ✅ Collocata nella categoria corretta
-- ✅ Elencata in ordine logico all'interno della categoria
-- ✅ Formattazione coerente con i vicini
+### Organization
+- ✅ Placed in the correct category
+- ✅ Listed in logical order within the category
+- ✅ Formatting consistent with neighbors
 
-## 🚀 Come Contribuire
+## 🚀 How to Contribute
 
-### Passaggio 1: Fork & Clone
+### Step 1: Fork & Clone
 ```bash
-git clone https://github.com/TUO-USERNAME/awesome-wazuh.git
+git clone https://github.com/YOUR-USERNAME/awesome-wazuh.git
 cd awesome-wazuh
-git checkout -b add/nome-tua-risorsa
+git checkout -b add/your-resource-name
 ```
 
-### Passaggio 2: Effettua i Tuoi Cambiamenti
-- Modifica il file `.md` appropriato
-- Segui il formato specificato sopra
-- Testa tutti i link che stai aggiungendo
+### Step 2: Make Your Changes
+- Edit the appropriate `.md` file
+- Follow the format specified above
+- Test all links you're adding
 
-### Passaggio 3: Verifica Tutto
+### Step 3: Verify Everything
 ```bash
-# Controlla la validità dei link (se hai un verificatore di link)
-# Rivedi la coerenza della formattazione
-# Testa il rendering markdown localmente
+# Check link validity (if you have a link checker)
+# Review formatting consistency
+# Test markdown rendering locally
 ```
 
-### Passaggio 4: Commit & Push
+### Step 4: Commit & Push
 ```bash
 git add .
-git commit -m "Aggiungi: [Titolo Risorsa] a [Categoria]"
-git push origin add/nome-tua-risorsa
+git commit -m "Add: [Resource Title] to [Category]"
+git push origin add/your-resource-name
 ```
 
-### Passaggio 5: Invia una Pull Request
-- **Titolo**: `Aggiungi [Risorsa] a [Categoria]` o `Correggi [Problema]`
-- **Descrizione**:
-  - Quale risorsa stai aggiungendo e perché
-  - Stato di verifica del link
-  - Qualsiasi contesto rilevante
+### Step 5: Submit a Pull Request
+- **Title**: `Add [Resource] to [Category]` or `Fix [Issue]`
+- **Description**:
+  - What resource you're adding and why
+  - Link verification status
+  - Any relevant context
 
-## ⚠️ Cosa Non Accettiamo
+## ⚠️ What We Don't Accept
 
-❌ **Servizi a pagamento** (a meno che non ci sia un livello gratuito sostanziale)
-❌ **Link morti o inaccessibili**
-❌ **Duplicati** di risorse esistenti
-❌ **Auto-promozione** senza validazione della community
-❌ **Informazioni obsolete** senza aggiornamenti
-❌ **Contenuti commerciali** travestiti da guide
-❌ **Risorse dannose o malevole**
+❌ **Paid services** (unless there's substantial free tier)
+❌ **Dead or inaccessible links**
+❌ **Duplicates** of existing resources
+❌ **Self-promotion** without community validation
+❌ **Outdated information** without updates
+❌ **Commercial content** disguised as guides
+❌ **Harmful or malicious resources**
 
-## 🏷️ Formato del Messaggio di Commit
+## 🏷️ Commit Message Format
 
-Segui i commit convenzionali:
+Follow conventional commits:
 ```
-add: [Risorsa] a [Categoria]
-fix: [Descrizione del problema]
-improve: [Descrizione dell'miglioramento]
-docs: [Aggiornamento della documentazione]
+add: [Resource] to [Category]
+fix: [Problem description]
+improve: [Improvement description]
+docs: [Documentation update]
 ```
 
-## 📝 Codice di Condotta
+## 📝 Code of Conduct
 
-- Sii rispettoso e professionale
-- Assumi buona intenzione
-- Fornisci feedback costruttivo
-- Nessuna molestia, discriminazione o discorso di odio
-- Segnala violazioni a Franco Tampieri (franco.tampieri@ttlab.it)
+- Be respectful and professional
+- Assume good intention
+- Provide constructive feedback
+- No harassment, discrimination, or hate speech
+- Report violations to Franco Tampieri (franco.tampieri@ttlab.it)
 
-## 🎓 Guida alle Categorie
+## 🎓 Category Guide
 
-### Deployment & Infrastruttura
-Infrastructure-as-Code, orchestrazione container, deployment cloud
+### Deployment & Infrastructure
+Infrastructure-as-Code, container orchestration, cloud deployment
 
-### Conformità & Governance
-Framework normativi, guide di conformità, mappatura degli standard
+### Compliance & Governance
+Regulatory frameworks, compliance guides, standards mapping
 
-### Integrazioni & Estensioni
-Servizi di terze parti, plugin, estensioni personalizzate
+### Integrations & Extensions
+Third-party services, plugins, custom extensions
 
-### Rilevamento & Risposta
-Regole, logica di rilevamento, automazione della risposta
+### Detection & Response
+Rules, detection logic, response automation
 
-### Apprendimento & Formazione
-Corsi ufficiali, guide della community, certificazioni
+### Learning & Training
+Official courses, community guides, certifications
 
-### Community & Supporto
-Forum, canali, servizi professionali
+### Community & Support
+Forums, channels, professional services
 
-## 🔗 Formato del Link
+## 🔗 Link Format
 
 **Standard:**
 ```markdown
-- **[Titolo](URL)** - Descrizione
+- **[Title](URL)** - Description
 ```
 
-**Con metadati:**
+**With metadata:**
 ```markdown
-- **[Titolo](URL)** - Descrizione
-  - Livello: Principiante/Intermedio/Avanzato
-  - Tipo: Categoria/Guida/Strumento
-  - Aggiornato: YYYY-MM-DD
+- **[Title](URL)** - Description
+  - Level: Beginner/Intermediate/Advanced
+  - Type: Category/Guide/Tool
+  - Updated: YYYY-MM-DD
 ```
 
-## 📊 Checklist di Verifica
+## 📊 Verification Checklist
 
-Prima di inviare la tua PR, verifica:
+Before submitting your PR, verify:
 
-- [ ] Tutti i link sono accessibili (testati nel browser)
-- [ ] La risorsa è rilevante per Wazuh
-- [ ] Non esistono duplicati
-- [ ] La formattazione corrisponde alle voci esistenti
-- [ ] La descrizione è chiara e concisa
-- [ ] Collocata nella categoria corretta
-- [ ] Il messaggio di commit segue il formato
-- [ ] Nessun errore di ortografia o grammatica
+- [ ] All links are accessible (tested in browser)
+- [ ] Resource is relevant to Wazuh
+- [ ] No duplicates exist
+- [ ] Formatting matches existing entries
+- [ ] Description is clear and concise
+- [ ] Placed in correct category
+- [ ] Commit message follows format
+- [ ] No spelling or grammar errors
 
-## ❓ Domande?
+## ❓ Questions?
 
-- **Slack**: Contatta la community Wazuh
-- **GitHub Issues**: Crea un issue di discussione
+- **Slack**: Contact the Wazuh community
+- **GitHub Issues**: Create a discussion issue
 - **Email**: franco.tampieri@ttlab.it
 
-## 🙏 Grazie!
+## 🙏 Thank You!
 
-I tuoi contributi aiutano a rendere Awesome Wazuh la migliore risorsa per la community. Ogni aggiunta conta!
+Your contributions help make Awesome Wazuh the best resource for the community. Every addition counts!
 
 ---
 
-**Ultimo Aggiornamento**: 31 gennaio 2026
-**Manutentore**: Franco Tampieri (@francotampieri)
+**Last Updated**: January 31, 2026
+**Maintainer**: Franco Tampieri (@francotampieri)

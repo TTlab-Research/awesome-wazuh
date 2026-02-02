@@ -1,124 +1,124 @@
-# Risorse Community
+# Community Resources
 
-**Elenco curato di risorse create dalla community Wazuh**
+**Curated list of resources created by the Wazuh community**
 
 ---
 
-## 🟢 Contenuti Community
+## Community Content
 
-### Risorse di Apprendimento
+### Learning Resources
 
-| Risorsa | Creatore | Tipo | Link |
-|---------|---------|------|------|
-| **Corso Wazuh Completo** | TJ Null | Corso | [Udemy](https://www.udemy.com/course/complete-wazuh-course/) |
-| **Formazione Admin Wazuh** | SIEM Intelligence | Corso | [SIEM Intelligence](https://www.siemintelligence.com/wazuh-admin-training) |
-| **Certificazione Wazuh** | initMAX | Corso | [initMAX](https://www.initmax.com/wazuh-training/) |
-| **Certificazione Vskills** | Vskills | Certificazione | [Vskills](https://www.vskills.in/certification/wazuh-certification-course) |
-| **Lab LetsDefend** | LetsDefend | Hands-on | [LetsDefend](https://app.letsdefend.io/training/lessons/wazuh) |
+| Resource | Creator | Type | Link |
+|----------|---------|------|------|
+| **Complete Wazuh Course** | TJ Null | Course | [Udemy](https://www.udemy.com/course/complete-wazuh-course/) |
+| **Wazuh Admin Training** | SIEM Intelligence | Course | [SIEM Intelligence](https://www.siemintelligence.com/wazuh-admin-training) |
+| **Wazuh Certification** | initMAX | Course | [initMAX](https://www.initmax.com/wazuh-training/) |
+| **Vskills Certification** | Vskills | Certification | [Vskills](https://www.vskills.in/certification/wazuh-certification-course) |
+| **LetsDefend Lab** | LetsDefend | Hands-on | [LetsDefend](https://app.letsdefend.io/training/lessons/wazuh) |
 
-### Guide & Tutorial Community
+### Community Guides & Tutorials
 
-| Guida | Creatore | Argomento | Link |
-|-------|---------|-----------|------|
-| **Mappatura ISO 27001** | Ahmed Abbes | Conformità | [Medium](https://medium.com/@ahmedabbes832/mapping-wazuh-output-to-iso-iec-27001-2022-evidence-that-your-controls-work-68aa793b2783) |
-| **Integrazione Jira** | Songer Pro | Integrazione | [Songer Pro](https://www.songer.pro/how-to-send-wazuh-alerts-to-jira/) |
-| **Serie Blue Team** | HackerSploit | Video | YouTube |
+| Guide | Creator | Topic | Link |
+|-------|---------|--------|------|
+| **ISO 27001 Mapping** | Ahmed Abbes | Compliance | [Medium](https://medium.com/@ahmedabbes832/mapping-wazuh-output-to-iso-iec-27001-2022-evidence-that-your-controls-work-68aa793b2783) |
+| **Jira Integration** | Songer Pro | Integration | [Songer Pro](https://www.songer.pro/how-to-send-wazuh-alerts-to-jira/) |
+| **Blue Team Series** | HackerSploit | Video | YouTube |
 
-### Progetti Community
+### Community Projects
 
-| Progetto | Descrizione | Link |
+| Project | Description | Link |
 |---------|-------------|------|
-| **awesome-wazuh** | Elenco risorsa curato | [GitHub](https://github.com/francotampieri/awesome-wazuh) |
-| **Community Discussions** | Richieste feature & idee | [GitHub Discussions](https://github.com/wazuh/wazuh/discussions) |
+| **awesome-wazuh** | Curated resource list | [GitHub](https://github.com/francotampieri/awesome-wazuh) |
+| **Community Discussions** | Feature requests & ideas | [GitHub Discussions](https://github.com/wazuh/wazuh/discussions) |
 
 ---
 
-## 🌍 Canali Community
+## Community Channels
 
-### Piattaforme Community Ufficiali
+### Official Community Platforms
 
-| Canale | Proposito | Link |
-|--------|----------|------|
-| **Slack** | Discussione in tempo reale | [Unisciti via wazuh.com/community](https://wazuh.com/community/) |
-| **Discord** | Chat community | [Unisciti via wazuh.com/community](https://wazuh.com/community/) |
-| **Reddit** | Discussioni | [r/Wazuh](https://www.reddit.com/r/wazuh/) |
-| **GitHub Discussions** | Richieste feature | [GitHub](https://github.com/wazuh/wazuh/discussions) |
+| Channel | Purpose | Link |
+|---------|---------|------|
+| **Slack** | Real-time discussion | [Join via wazuh.com/community](https://wazuh.com/community/) |
+| **Discord** | Community chat | [Join via wazuh.com/community](https://wazuh.com/community/) |
+| **Reddit** | Discussions | [r/Wazuh](https://www.reddit.com/r/wazuh/) |
+| **GitHub Discussions** | Feature requests | [GitHub](https://github.com/wazuh/wazuh/discussions) |
 
-### Community Locale
+### Local Community
 
-- **Meetup**: Trova gruppi locali di utenti Wazuh
-- **Conferenze**: Black Hat, RSAC, InfoSec Europe, SecTor
-- **Webinar**: Sessioni di formazione guidate dalla community
-
----
-
-## Diventare un Contributore
-
-### Modalità di Contribuzione
-
-1. **Rispondi a Domande**: Aiuta su Slack, Discord, Reddit, GitHub Issues
-2. **Crea Contenuti**: Post blog, video, tutorial
-3. **Sviluppa Strumenti**: Script personalizzati, integrazioni, plugin
-4. **Segnala Problemi**: Segnalazioni bug, richieste feature
-5. **Migliora Docs**: Grammatica, chiarezza, traduzioni
+- **Meetup**: Find local Wazuh user groups
+- **Conferences**: Black Hat, RSAC, InfoSec Europe, SecTor
+- **Webinars**: Community-led training sessions
 
 ---
 
-## Riconoscimento Community
+## Becoming a Contributor
 
-### Programma Ambasciatore Wazuh
+### Ways to Contribute
 
-- Riconoscimento ufficiale da Wazuh
-- Opportunità di co-marketing
-- Programmi di condivisione dei ricavi
-- Supporto per speaking
-
-**Vedi**: [Programma Ambasciatore](../ambassador/program.md)
-
-### Contributori
-
-Vedi [CONTRIBUTORS.md](../../CONTRIBUTORS.md) per contributori riconosciuti.
+1. **Answer Questions**: Help on Slack, Discord, Reddit, GitHub Issues
+2. **Create Content**: Blog posts, videos, tutorials
+3. **Develop Tools**: Custom scripts, integrations, plugins
+4. **Report Issues**: Bug reports, feature requests
+5. **Improve Docs**: Grammar, clarity, translations
 
 ---
 
-## Dimensione Community
+## Community Recognition
 
-- **14.600+** stelle su repository Wazuh principale
-- **2.900+** follower GitHub
-- **31+** repository ufficiali
-- **Migliaia** di membri della community a livello globale
+### Wazuh Ambassador Program
 
-**Stato Community**: Una delle più grandi community di sicurezza open-source
+- Official recognition from Wazuh
+- Co-marketing opportunities
+- Revenue sharing programs
+- Speaking support
 
----
+**See**: [Ambassador Program](../ambassador/program.md)
 
-## Best Practice Community
+### Contributors
 
-### Quando Cerchi Aiuto
-
-1. **Ricerca prima**: Controlla GitHub issues, discussions, canali community
-2. **Sii specifico**: Includi versione, OS, messaggi di errore
-3. **Fornisci contesto**: Cosa stavi cercando di fare?
-4. **Mostra impegno**: Cosa hai già provato?
-
-### Quando Condividi
-
-1. **Non condividere credenziali**: Igienizza config prima di postare
-2. **Rispetta NDA**: Non condividere dati confidenziali
-3. **Attribuzione**: Dai credito ai creatori
-4. **Segui linee guida**: Rivedi codice di condotta della community
+See [CONTRIBUTORS.md](../../CONTRIBUTORS.md) for recognized contributors.
 
 ---
 
-## Condividi il Tuo Lavoro
+## Community Size
 
-Hai un post blog, tutorial o strumento da condividere?
+- **14,600+** stars on main Wazuh repository
+- **2,900+** GitHub followers
+- **31+** official repositories
+- **Thousands** of community members worldwide
 
-1. **Posta su canali community**: Slack, Discord, Reddit
-2. **Invia ad awesome-wazuh**: Crea PR su [GitHub](https://github.com/francotampieri/awesome-wazuh)
-3. **Contatta Wazuh**: Per amplificazione ufficiale via blog/social
+**Community Status**: One of the largest open-source security communities
 
 ---
 
-**Ultimo Aggiornamento**: 31 gennaio 2026
-**Stato**: Mantenuto dalla community
+## Community Best Practices
+
+### When Seeking Help
+
+1. **Search first**: Check GitHub issues, discussions, community channels
+2. **Be specific**: Include version, OS, error messages
+3. **Provide context**: What were you trying to do?
+4. **Show effort**: What have you already tried?
+
+### When Sharing
+
+1. **Don't share credentials**: Sanitize config before posting
+2. **Respect NDA**: Don't share confidential data
+3. **Attribution**: Credit creators
+4. **Follow guidelines**: Review community code of conduct
+
+---
+
+## Share Your Work
+
+Have a blog post, tutorial, or tool to share?
+
+1. **Post on community channels**: Slack, Discord, Reddit
+2. **Submit to awesome-wazuh**: Create PR on [GitHub](https://github.com/francotampieri/awesome-wazuh)
+3. **Contact Wazuh**: For official amplification via blog/social
+
+---
+
+**Last Updated**: January 31, 2026
+**Status**: Community maintained

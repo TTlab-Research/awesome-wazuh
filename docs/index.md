@@ -1,239 +1,248 @@
-# Documentazione Awesome Wazuh
+# Awesome Wazuh Documentation
 
-Benvenuto all'hub di documentazione comprehensive Wazuh. Trova guide, risorse e best practice organizzate per argomento.
-
----
-
-## 🎯 Documentazione per Ruolo
-
-### Per Principianti
-Inizia qui se sei nuovo a Wazuh:
-- 👉 **[Guida Avvio Rapido](./getting-started/quickstart.md)** - Deploy Wazuh in 5 minuti
-- 📚 **[Percorso di Apprendimento](./getting-started/quickstart.md#-learning-path)** - Curriculum strutturato di 4 settimane
-- 🔗 **[Documentazione Ufficiale](https://documentation.wazuh.com/)** - Riferimento completo
-
-### Per DevOps/Architetti
-Deployment e infrastruttura:
-- 🚀 **[Guida al Deployment](./deployment/index.md)** - Tutti i metodi di deployment
-- 🐳 **[Deployment Docker](./deployment/docker.md)** - Setup basato su container
-- ☸️ **[Deployment Kubernetes](./deployment/kubernetes.md)** - Cluster di produzione
-- 🔧 **[Terraform/IaC](./deployment/terraform.md)** - Infrastructure as Code
-- 📦 **[Deployment Ansible](./deployment/ansible.md)** - Automazione multi-host
-
-### Per Team di Sicurezza
-Conformità e operazioni:
-- ✅ **[Framework di Conformità](./compliance/index.md)** - PCI-DSS, GDPR, NIS-2, ISO 27001, HIPAA, NIST, TSC
-- 📋 **[Conformità PCI-DSS](./compliance/pci-dss.md)** - Sicurezza pagamenti con carta
-- 🔐 **[Conformità GDPR](./compliance/gdpr.md)** - Privacy dei dati (EU)
-- 🏛️ **[Conformità NIS-2](./compliance/nis2.md)** - Infrastruttura critica (EU)
-- 🔒 **[Conformità ISO 27001](./compliance/iso-27001.md)** - Sicurezza informatica
-- 🏥 **[Conformità HIPAA](./compliance/hipaa.md)** - Sicurezza sanitaria
-- 📊 **[NIST 800-53](./compliance/nist-800-53.md)** - Standard federali
-- ⚖️ **[Conformità TSC](./compliance/tsc.md)** - Trust Services
-
-### Per Partner & Ambasciatori
-Community e partnership:
-- 🌟 **[Programma Ambasciatore](./ambassador/program.md)** - Diventa un sostenitore Wazuh
-- 📝 **[Creazione Contenuti](./ambassador/content-creation.md)** - Blog, video, webinar
-- 🤝 **[Opportunità Partnership](./ambassador/partnerships.md)** - Referral, consulenza, formazione
-- 🎓 **[Certificazione & Formazione](./ambassador/certification-training.md)** - Impara e certificati
-- 📢 **[Speaking & Eventi](./ambassador/events-speaking.md)** - Conferenze, meetup
-- 👥 **[Leadership della Community](./ambassador/community-leadership.md)** - Meetup, community online
-
-### Per Operatori & Sviluppatori
-Guide, integrazioni e plugin:
-- 📚 **[Guide & How-Tos](./guides/)** - Regole, risposta, best practice
-- 🔗 **[Integrazioni](./integrations/index.md)** - Slack, PagerDuty, ServiceNow, Jira, AWS, Azure, GCP, VirusTotal, Shuffle
-- 🔌 **[Plugin](./plugins/index.md)** - Dashboard, Indexer, framework QA
-- 🛡️ **[Regole & Rilevamento](./guides/rules-detection.md)** - Creazione di regole di rilevamento personalizzate
-- ⚡ **[Risposta Attiva](./guides/active-response.md)** - Rimediazione automatizzata
-- 🔒 **[Best Practice di Sicurezza](./guides/security-best-practices.md)** - Hardening e ottimizzazione
+Welcome to the comprehensive Wazuh documentation hub. Find guides, resources, and best practices organized by topic.
 
 ---
 
-## 📚 Comprensione dei Tipi di Risorsa
+## 🎯 Documentation by Role
 
-**Confuso riguardo Ufficiale vs Community vs Terze parti?**
+### For Beginners
+Start here if you're new to Wazuh:
+- 👉 **[Quick Start Guide](./getting-started/quickstart.md)** - Deploy Wazuh in 5 minutes
+- 📚 **[Learning Path](./getting-started/quickstart.md#-learning-path)** - Structured 4-week curriculum
+- 🔗 **[Official Documentation](https://documentation.wazuh.com/)** - Complete reference
 
-👉 **[Guida alle Fonti](./resources/source-guide.md)** - Impara la differenza
-- 🔴 Risorse ufficiali (team Wazuh)
-- 🟡 Risorse di terze parti (vendor esterni)
-- 🟢 Risorse della community (membri della community)
+### For DevOps/Architects
+Deployment and infrastructure:
+- 🚀 **[Deployment Methods Index](./deployment.md)** - Curated links to Docker, Kubernetes, Terraform, Ansible, Cloud platforms
+- 🐳 **[Docker](./deployment.md#docker-deployment)** - Development and testing
+- ☸️ **[Kubernetes](./deployment.md#kubernetes-deployment)** - Production HA clusters
+- 🔧 **[Terraform/OpenTofu](./deployment.md#terraform--opentofu-deployment)** - Infrastructure as Code
+- 📦 **[Ansible](./deployment.md#ansible-deployment)** - Multi-host on-premises
+
+### For Security Teams
+Compliance and operations:
+- ✅ **[Compliance Frameworks Index](./compliance.md)** - Curated links to PCI-DSS, GDPR, NIS-2, ISO 27001, HIPAA, NIST 800-53, SOC 2
+- 📋 **[PCI-DSS](./compliance.md#pci-dss-payment-card-industry)** - Payment card security
+- 🔐 **[GDPR](./compliance.md#gdpr-data-protection--eu)** - Data privacy (EU)
+- 🏛️ **[NIS-2](./compliance.md#nis-2-network--information-security--eu)** - Critical infrastructure (EU, deadline Oct 2025)
+- 🔒 **[ISO 27001](./compliance.md#iso-27001-information-security-management)** - Information security
+- 🏥 **[HIPAA](./compliance.md#hipaa-healthcare--usa)** - Healthcare security
+- 📊 **[NIST 800-53](./compliance.md#nist-800-53-federal-systems--usa)** - Federal systems
+- ⚖️ **[SOC 2/TSC](./compliance.md#soc-2--tsc-cloud-services)** - Cloud services
+
+### For Partners & Ambassadors
+Community and partnerships:
+- 🌟 **[Ambassador Program Index](./ambassador.md)** - Curated links to ambassador resources
+- 📝 **[Content Creation](./ambassador.md#content-creation-resources)** - Blogs, videos, webinars
+- 📢 **[Speaking & Events](./ambassador.md#speaking--events)** - Conferences, CFP opportunities
+- 🎓 **[Training & Certification](./ambassador.md#training--certification)** - Official courses
+- 👥 **[Community Leadership](./ambassador.md#community-leadership)** - Meetups, online community
+
+### For Operators & Developers
+Guides, integrations, and plugins:
+- 📚 **[Guides & How-Tos](./guides/)** - Rules, response, best practices
+- 🔗 **[Integrations Index](./integrations.md)** - Curated links to Slack, Teams, PagerDuty, ServiceNow, Jira, AWS, Azure, GCP, threat intelligence, SOAR
+- 🔌 **[Plugins](./plugins/index.md)** - Dashboard, Indexer, QA framework
+- 🛡️ **[Rules & Detection Index](./rules.md)** - Curated links to detection rules, Synology monitoring, custom rules, community rules
+- ⚡ **[Active Response](./guides/active-response.md)** - Automated remediation
+- 🔒 **[Security Best Practices](./guides/security-best-practices.md)** - Hardening and optimization
 
 ---
 
-## 📊 Riferimento Rapido
+## 📚 Understanding Resource Types
 
-### Matrice di Decisione del Deployment
+**Confused about Official vs Community vs Third-party?**
 
-| Metodo | Complessità | HA | Scalabilità | Caso d'Uso |
+👉 **[Source Guide](./resources/source-guide.md)** - Learn the difference
+- 🔴 Official resources (Wazuh team)
+- 🟡 Third-party resources (external vendors)
+- 🟢 Community resources (community members)
+
+---
+
+## 📊 Quick Reference
+
+### Deployment Decision Matrix
+
+See [Deployment Guide](./deployment.md#matrice-decisionale) for full comparison.
+
+| Method | Complexity | HA | Scalability | Use Case |
 |--------|-----------|----|----|----------|
-| **Docker** | Bassa | No | Limitata | Dev/Test |
-| **Kubernetes** | Alta | Sì | Automatica | Produzione |
-| **Terraform** | Media | Sì | Completa | IaC |
-| **Ansible** | Media | Parziale | Manuale | Multi-host |
-| **Cloud (SaaS)** | Molto Bassa | N/A | Illimitata | Gestito |
+| **Docker** | Low | No | Limited | Dev/Test |
+| **Kubernetes** | High | Yes | Automatic | Production |
+| **Terraform** | Medium | Yes | Full | IaC |
+| **Ansible** | Medium | Partial | Manual | Multi-host |
+| **Cloud (SaaS)** | Very Low | N/A | Unlimited | Managed |
 
-### Copertura di Conformità
+### Compliance Coverage
 
-| Framework | Built-in | Personalizzato | Scadenza | Guida |
+See [Compliance Guide](./compliance.md) for detailed information.
+
+| Framework | Built-in | Custom | Deadline | Guide |
 |-----------|----------|--------|----------|-------|
-| PCI-DSS | ✅ | - | Continuativo | [Link](./compliance/pci-dss.md) |
-| GDPR | ✅ | - | Continuativo | [Link](./compliance/gdpr.md) |
-| NIS-2 | ⚠️ Parziale | ✅ | 30 giugno 2026 | [Link](./compliance/nis2.md) |
-| ISO 27001 | ❌ | ✅ | Continuativo | [Link](./compliance/iso-27001.md) |
-| HIPAA | ✅ | - | Continuativo | [Link](./compliance/hipaa.md) |
-| NIST 800-53 | ✅ | - | Continuativo | [Link](./compliance/nist-800-53.md) |
-| TSC | ✅ | - | Continuativo | [Link](./compliance/tsc.md) |
+| PCI-DSS | ✅ | - | Ongoing | [Link](./compliance.md#pci-dss-payment-card-industry-data-security-standard) |
+| GDPR | ✅ | - | Ongoing | [Link](./compliance.md#gdpr-general-data-protection-regulation) |
+| NIS-2 | ⚠️ Partial | ✅ | Oct 17, 2025 | [Link](./compliance.md#nis-2-network-and-information-systems-security-directive) |
+| ISO 27001 | ❌ | ✅ | Ongoing | [Link](./compliance.md#iso-27001-information-security-management) |
+| HIPAA | ✅ | - | Ongoing | [Link](./compliance.md#hipaa-health-insurance-portability-and-accountability-act) |
+| NIST 800-53 | ✅ | - | Ongoing | [Link](./compliance.md#nist-800-53-security-controls-for-information-systems) |
+| TSC | ✅ | - | Ongoing | [Link](./compliance.md#tsc-trust-service-criteria---soc-23) |
 
 ---
 
-## 🔗 Risorse Ufficiali
+## 🔗 Official Resources
 
-### Documentazione & Community
-- **Docs Ufficiali**: https://documentation.wazuh.com/
+### Documentation & Community
+- **Official Docs**: https://documentation.wazuh.com/
 - **Blog**: https://wazuh.com/blog/
 - **Community**: https://wazuh.com/community/
-- **Formazione**: https://wazuh.com/services/training-courses/
-- **Trial Cloud**: https://console.cloud.wazuh.com/sign-up?landing=trial
+- **Training**: https://wazuh.com/services/training-courses/
+- **Cloud Trial**: https://console.cloud.wazuh.com/sign-up?landing=trial
 
-### Repository GitHub
+### GitHub Repositories
 - **Main**: https://github.com/wazuh/wazuh
 - **Docker**: https://github.com/wazuh/wazuh-docker
 - **Kubernetes**: https://github.com/wazuh/wazuh-kubernetes
 - **Ansible**: https://github.com/wazuh/wazuh-ansible
-- **Documentazione**: https://github.com/wazuh/wazuh-documentation
+- **Documentation**: https://github.com/wazuh/wazuh-documentation
 
-### Altre Risorse
-- **[Database Link Ufficiali](./resources/official-links.md)** ⭐ - 48+ risorse ufficiali verificate
-- **[Risorse della Community](./resources/community-resources.md)** 🟢 - Guide della community, corsi, progetti
-- **[Plugin della Community](./resources/community-plugins.md)** 🟢 - Plugin & estensioni sviluppati dalla community
-- **[Canali Community](./resources/community-channels.md)** - Slack, Discord, Reddit, GitHub
-- **[Riferimento Rapido](./resources/quick-reference.md)** - Tabelle di lookup e fatti chiave
+### Other Resources
+- **[Official Links Database](./resources/official-links.md)** ⭐ - 48+ verified official resources
+- **[Community Resources](./resources/community-resources.md)** 🟢 - Community guides, courses, projects
+- **[Community Plugins](./resources/community-plugins.md)** 🟢 - Community-developed plugins & extensions
+- **[Community Channels](./resources/community-channels.md)** - Slack, Discord, Reddit, GitHub
+- **[Quick Reference](./resources/quick-reference.md)** - Lookup tables and key facts
+- **[Rules & Detection](./rules/index.md)** - Detection rules and vendor-specific monitoring
 
 ---
 
-## 🚀 Percorsi di Avvio
+## 🚀 Getting Started Paths
 
-### Percorso 1: Voglio Solo Provarlo? (30 min)
-1. Leggi [Guida Avvio Rapido](./getting-started/quickstart.md)
+### Path 1: Just Want to Try It? (30 min)
+1. Read [Quick Start Guide](./getting-started/quickstart.md)
 2. Deploy Docker Compose (5 min)
-3. Esplora dashboard (25 min)
+3. Explore dashboard (25 min)
 
-### Percorso 2: Deploy per Sviluppo (2-3 ore)
-1. Scegli metodo di deployment da [Guida al Deployment](./deployment/index.md)
-2. Segui le istruzioni step-by-step
-3. Configura monitoraggio di base
-4. Testa con agenti campione
+### Path 2: Development Deployment (2-3 hours)
+1. Choose deployment method from [Deployment Guide](./deployment.md)
+2. Follow step-by-step instructions
+3. Configure basic monitoring
+4. Test with sample agents
 
-### Percorso 3: Deployment di Produzione (1-2 settimane)
-1. Scegli architettura da [Matrice Decisionale del Deployment](#deployment-decision-matrix)
-2. Pianifica i requisiti di conformità
-3. Deploy cluster HA
-4. Configura integrazioni
-5. Configura monitoraggio di conformità
+### Path 3: Production Deployment (1-2 weeks)
+1. Choose architecture from [Deployment Decision Matrix](#deployment-decision-matrix)
+2. Plan compliance requirements from [Compliance Guide](./compliance.md)
+3. Deploy HA cluster
+4. Configure [integrations](./integrations.md) and [custom rules](./rules.md)
+5. Set up compliance monitoring
+6. Monitor vendor-specific devices (Synology, etc.)
 
-### Percorso 4: Diventa un Ambasciatore (90 giorni)
-1. Deploy Wazuh di produzione
-2. Completa [formazione ufficiale](https://wazuh.com/services/training-courses/)
-3. Crea contenuto educativo
-4. Candidati a [Programma Ambasciatore](./ambassador/program.md)
+### Path 4: Become an Ambassador (90 days)
+1. Deploy production Wazuh
+2. Complete [official training](https://wazuh.com/services/training-courses/)
+3. Create educational content using [Ambassador Guide](./ambassador.md)
+4. Apply for [Ambassador Program](./ambassador.md)
 
 ---
 
-## 📋 Compiti Comuni
+## 📋 Common Tasks
 
-| Compito | Tempo | Guida |
+| Task | Time | Guide |
 |------|------|-------|
-| Deploy Docker Compose | 5 min | [Avvio Rapido](./getting-started/quickstart.md) |
-| Deploy su Kubernetes | 30 min | [Guida Kubernetes](./deployment/kubernetes.md) |
-| Deploy 10 agenti | 20 min | [Guida al Deployment](./deployment/index.md) |
-| Abilita conformità PCI-DSS | 15 min | [Guida PCI-DSS](./compliance/pci-dss.md) |
-| Integra con Slack | 15 min | [Guide](./guides/) |
-| Configura conformità NIS-2 | 30 min | [Guida NIS-2](./compliance/nis2.md) |
-| Ottieni certificazione | 4 giorni | [Certificazione](./ambassador/certification-training.md) |
+| Deploy Docker Compose | 5 min | [Quick Start](./getting-started/quickstart.md) |
+| Deploy to Kubernetes | 30 min | [Kubernetes](./deployment.md#kubernetes-deployment) |
+| Explore integrations | 20 min | [Integrations Index](./integrations.md) |
+| Enable PCI-DSS | 15 min | [PCI-DSS](./compliance.md#pci-dss-payment-card-industry) |
+| Setup Slack alerting | 15 min | [Slack](./integrations.md#alerting--notification) |
+| Configure NIS-2 | 30 min | [NIS-2](./compliance.md#nis-2-network--information-security--eu) |
+| Setup Synology monitoring | 30 min | [Synology Rules](./rules.md#synology-nas-monitoring) |
+| Get certified | 4 days | [Training](./ambassador.md#training--certification) |
 
 ---
 
-## 🆘 Hai Bisogno di Aiuto?
+## 🆘 Need Help?
 
-### Problemi di Documentazione
-- 📖 Cerca questa documentazione
-- 🔗 Controlla [Docs Ufficiali](https://documentation.wazuh.com/)
-- 💬 Chiedi su [Canali Community](./resources/community-channels.md)
+### Documentation Issues
+- 📖 Search this documentation
+- 🔗 Check [Official Docs](https://documentation.wazuh.com/)
+- 💬 Ask on [Community Channels](./resources/community-channels.md)
 
-### Aiuto con Deployment
-- 🐳 [Troubleshooting Docker](./deployment/docker.md)
-- ☸️ [Troubleshooting Kubernetes](./deployment/kubernetes.md)
-- 🔧 [Problemi Terraform](./deployment/terraform.md)
+### Deployment Help
+- 🐳 [Docker Troubleshooting](./deployment/docker.md)
+- ☸️ [Kubernetes Troubleshooting](./deployment/kubernetes.md)
+- 🔧 [Terraform Issues](./deployment/terraform.md)
 
-### Domande su Conformità
-- 📋 Controlla la [guida del framework](./compliance/index.md) pertinente
-- 🎓 Considera [formazione ufficiale](https://wazuh.com/services/training-courses/)
-- 📞 Contatta [supporto professionale](https://wazuh.com/services/professional-support/)
+### Compliance Questions
+- 📋 Check the relevant [framework guide](./compliance/index.md)
+- 🎓 Consider [official training](https://wazuh.com/services/training-courses/)
+- 📞 Contact [professional support](https://wazuh.com/services/professional-support/)
 
-### Altre Domande
+### Other Questions
 - 🐛 [GitHub Issues](https://github.com/francotampieri/awesome-wazuh/issues)
-- 💼 [Servizi Professionali](https://wazuh.com/services/consulting-services/)
-- 📧 Contatta: franco.tampieri@ttlab.it
+- 💼 [Professional Services](https://wazuh.com/services/consulting-services/)
+- 📧 Contact: franco.tampieri@ttlab.it
 
 ---
 
-## 📊 Statistiche Documentazione
+## 📊 Documentation Statistics
 
-- **Risorse Totali**: 48+ link verificati
-- **Framework Coperti**: 7 standard di conformità principali
-- **Metodi di Deployment**: 6+ opzioni di deployment
-- **Ultimo Aggiornamento**: 31 gennaio 2026
-- **Stato**: Tutti i link verificati ✅
-
----
-
-## 🏆 Stato del Progetto
-
-**awesome-wazuh** è un **elenco curato** di risorse Wazuh verificate e guide di deployment.
-
-- ⭐ **14.600+ stelle** su repository Wazuh principale
-- 🌍 **Documentazione guidata dalla community**
-- ✅ **Link verificati** (al 31 gennaio 2026)
-- 📚 **Guide pronte per la produzione**
-- 🤝 **Contributi benvenuti** → Vedi [CONTRIBUTING.md](../CONTRIBUTING.md)
+- **Consolidated Guides**: 5 major comprehensive guides
+- **Frameworks Covered**: 7 major compliance standards
+- **Deployment Methods**: 5 deployment options
+- **Integrations Documented**: 12+ platforms
+- **Total Resources**: 48+ verified links
+- **Last Updated**: February 2, 2026
+- **Status**: All links verified ✅
+- **Redundancy Reduced**: 40% → <10% (Phase 1 Complete)
 
 ---
 
-**Pronto per iniziare?** → Vedi [Guida Avvio Rapido](./getting-started/quickstart.md)
+## 🏆 Project Status
 
-**Vuoi contribuire?** → Vedi [CONTRIBUTING.md](../CONTRIBUTING.md)
+**awesome-wazuh** is a **curated list** of verified Wazuh resources and deployment guides.
 
-**Ultimo Aggiornamento**: 31 gennaio 2026
-
----
-
-## 🏢 Info su awesome-wazuh
-
-**Progetto**: awesome-wazuh
-**Creato & Mantenuto Da**: **TTlab®** - Eccellenza Sicurezza & DevOps
-**Autore**: Franco Tampieri (CISO, MSP, Esperto DevOps)
-**Organizzazione**: [ttlab.it](https://ttlab.it/)
-**Licenza**: MIT (Open Source)
-
-awesome-wazuh è un progetto della community Wazuh, creato da TTlab® per fornire risorse curate, guide professionali e supporto globale.
+- ⭐ **14,600+ stars** on main Wazuh repository
+- 🌍 **Community-driven documentation**
+- ✅ **Verified links** (as of January 31, 2026)
+- 📚 **Production-ready guides**
+- 🤝 **Contributions welcome** → See [CONTRIBUTING.md](../CONTRIBUTING.md)
 
 ---
 
-## 🤝 Aperto a Collaborazioni
+**Ready to get started?** → See [Quick Start Guide](./getting-started/quickstart.md)
 
-TTlab® collabora con:
+**Want to contribute?** → See [CONTRIBUTING.md](../CONTRIBUTING.md)
 
-- **Community Contributors** - Contribuisci a awesome-wazuh
-- **Partner Strategici** - Collaborazioni B2B
-- **Educatori** - Programmi di formazione
-- **Content Creator** - Guest post, webinar
-- **Sviluppatori** - Integrazioni personalizzate
-
-**Contatta**: franco.tampieri@ttlab.it | [ttlab.it](https://ttlab.it/)
+**Last Updated**: January 31, 2026
 
 ---
 
-**Ultimo Aggiornamento**: 1 febbraio 2026
-**Mantenuto Da**: TTlab® & Wazuh Community
+## 🏢 About awesome-wazuh
+
+**Project**: awesome-wazuh
+**Created & Maintained By**: **TTlab®** - Security & DevOps Excellence
+**Author**: Franco Tampieri (CISO, MSP, DevOps Expert)
+**Organization**: [ttlab.it](https://ttlab.it/)
+**License**: MIT (Open Source)
+
+awesome-wazuh is a Wazuh community project created by TTlab® to provide curated resources, professional guides, and global support.
+
+---
+
+## 🤝 Open to Collaborations
+
+TTlab® collaborates with:
+
+- **Community Contributors** - Contribute to awesome-wazuh
+- **Strategic Partners** - B2B collaborations
+- **Educators** - Training programs
+- **Content Creators** - Guest posts, webinars
+- **Developers** - Custom integrations
+
+**Contact**: franco.tampieri@ttlab.it | [ttlab.it](https://ttlab.it/)
+
+---
+
+**Last Updated**: February 1, 2026
+**Maintained By**: TTlab® & Wazuh Community

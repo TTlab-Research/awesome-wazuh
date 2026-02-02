@@ -1,78 +1,78 @@
-# Risorse Ufficiali Wazuh
+# Official Wazuh Resources
 
-**Elenco curato di risorse ufficiali Wazuh mantenuto dal team Wazuh**
+**Curated list of official Wazuh resources maintained by the Wazuh team**
 
-**Ultimo Aggiornamento**: 31 gennaio 2026
-**Stato**: Tutte le risorse verificate ✅
-
----
-
-## 🔴 Documentazione Ufficiale & Risorse
-
-### Documentazione Ufficiale
-| Risorsa | URL | Descrizione | Livello |
-|---------|-----|-------------|---------|
-| **Documentazione Ufficiale** | https://documentation.wazuh.com/ | Documentazione completa per tutte le versioni | Principiante→Avanzato |
-| **Guida Introduttiva** | https://documentation.wazuh.com/current/getting-started/index.html | Guida introduttiva rapida | Principiante |
-| **Guida Installazione** | https://documentation.wazuh.com/current/installation-guide/index.html | Tutti i metodi di deployment | Principiante→Intermedio |
-| **Manuale Utente** | https://documentation.wazuh.com/current/user-manual/index.html | Manuale operativo completo | Intermedio→Avanzato |
-| **Riferimento API** | https://documentation.wazuh.com/current/user-manual/api/reference.html | Documentazione API REST | Avanzato |
-| **Note di Rilascio** | https://documentation.wazuh.com/current/release-notes/index.html | Note di rilascio versioni 2.x-4.x | Intermedio |
-
-### Sito Ufficiale Wazuh
-| Risorsa | URL | Descrizione |
-|---------|-----|-------------|
-| **Homepage** | https://wazuh.com/ | Sito ufficiale Wazuh |
-| **Blog Ufficiale** | https://wazuh.com/blog/ | Articoli e tutorial settimanali |
-| **Centro Risorse** | https://wazuh.com/resources/ | Whitepaper, case study, guide |
-| **Corsi di Formazione** | https://wazuh.com/services/training-courses/ | Corsi ufficiali con certificazione |
-| **Pagina Community** | https://wazuh.com/community/ | Canali community ufficiali |
-| **Console Cloud** | https://console.cloud.wazuh.com/ | Wazuh Cloud SaaS |
-| **Trial Cloud** | https://console.cloud.wazuh.com/sign-up?landing=trial | Prova gratuita Wazuh Cloud |
+**Last Updated**: January 31, 2026
+**Status**: All resources verified ✅
 
 ---
 
-## Repository Ufficiali Principali
+## Official Documentation & Resources
 
-### Core & Infrastruttura
-| Repository | Link | Stelle | Linguaggio | Descrizione |
-|------------|------|--------|-----------|-------------|
-| **wazuh** (Main) | https://github.com/wazuh/wazuh | 14.600+ | C, Python, Go | Piattaforma core |
-| **wazuh-docker** | https://github.com/wazuh/wazuh-docker | 1.026 | Shell, Dockerfile | Deployment Docker |
-| **wazuh-kubernetes** | https://github.com/wazuh/wazuh-kubernetes | 358 | Shell, Python | Deployment K8s |
-| **wazuh-ansible** | https://github.com/wazuh/wazuh-ansible | - | YAML, Shell | Playbook Ansible IaC |
-| **wazuh-virtual-machines** | https://github.com/wazuh/wazuh-virtual-machines | - | - | Immagini OVA & AMI |
+### Official Documentation
+| Resource | URL | Description | Level |
+|----------|-----|-------------|-------|
+| **Official Documentation** | https://documentation.wazuh.com/ | Complete documentation for all versions | Beginner→Advanced |
+| **Getting Started** | https://documentation.wazuh.com/current/getting-started/index.html | Quick start guide | Beginner |
+| **Installation Guide** | https://documentation.wazuh.com/current/installation-guide/index.html | All deployment methods | Beginner→Intermediate |
+| **User Manual** | https://documentation.wazuh.com/current/user-manual/index.html | Complete operations manual | Intermediate→Advanced |
+| **API Reference** | https://documentation.wazuh.com/current/user-manual/api/reference.html | REST API documentation | Advanced |
+| **Release Notes** | https://documentation.wazuh.com/current/release-notes/index.html | Release notes versions 2.x-4.x | Intermediate |
 
-### Documentazione & Supporto
-| Repository | Link | Descrizione |
+### Official Wazuh Website
+| Resource | URL | Description |
+|----------|-----|-------------|
+| **Homepage** | https://wazuh.com/ | Official Wazuh site |
+| **Official Blog** | https://wazuh.com/blog/ | Weekly articles and tutorials |
+| **Resource Center** | https://wazuh.com/resources/ | Whitepapers, case studies, guides |
+| **Training Courses** | https://wazuh.com/services/training-courses/ | Official courses with certification |
+| **Community Page** | https://wazuh.com/community/ | Official community channels |
+| **Cloud Console** | https://console.cloud.wazuh.com/ | Wazuh Cloud SaaS |
+| **Cloud Trial** | https://console.cloud.wazuh.com/sign-up?landing=trial | Free Wazuh Cloud trial |
+
+---
+
+## Main Official Repositories
+
+### Core & Infrastructure
+| Repository | Link | Stars | Language | Description |
+|------------|------|-------|----------|-------------|
+| **wazuh** (Main) | https://github.com/wazuh/wazuh | 14,600+ | C, Python, Go | Core platform |
+| **wazuh-docker** | https://github.com/wazuh/wazuh-docker | 1,026 | Shell, Dockerfile | Docker deployment |
+| **wazuh-kubernetes** | https://github.com/wazuh/wazuh-kubernetes | 358 | Shell, Python | K8s deployment |
+| **wazuh-ansible** | https://github.com/wazuh/wazuh-ansible | - | YAML, Shell | Ansible playbooks IaC |
+| **wazuh-virtual-machines** | https://github.com/wazuh/wazuh-virtual-machines | - | - | OVA & AMI images |
+
+### Documentation & Support
+| Repository | Link | Description |
 |------------|------|-------------|
-| **wazuh-documentation** | https://github.com/wazuh/wazuh-documentation | Sorgente documentazione |
+| **wazuh-documentation** | https://github.com/wazuh/wazuh-documentation | Documentation source |
 
 ---
 
-## Canali Community
+## Community Channels
 
-| Canale | URL | Stato |
-|--------|-----|--------|
-| **Slack** | Disponibile via wazuh.com/community | ✅ Attivo |
-| **Discord** | Disponibile via wazuh.com/community | ✅ Attivo |
-| **Reddit** | Disponibile via wazuh.com/community | ✅ Attivo |
+| Channel | URL | Status |
+|---------|-----|--------|
+| **Slack** | Available via wazuh.com/community | ✅ Active |
+| **Discord** | Available via wazuh.com/community | ✅ Active |
+| **Reddit** | Available via wazuh.com/community | ✅ Active |
 | **GitHub** | https://github.com/wazuh | ✅ Discussions & Issues |
-| **Twitter/X** | Disponibile via wazuh.com/community | ✅ Per aggiornamenti |
+| **Twitter/X** | Available via wazuh.com/community | ✅ For updates |
 
 ---
 
-## Supporto Professionale
+## Professional Support
 
-| Servizio | Link | Descrizione |
-|----------|------|-------------|
-| **Supporto Professionale** | https://wazuh.com/services/professional-support/ | Supporto con SLA |
-| **Servizi di Consulenza** | https://wazuh.com/services/consulting-services/ | Consulenza esperti |
-| **Contatti** | https://wazuh.com/contact-us/ | Informazioni di contatto |
+| Service | Link | Description |
+|---------|------|-------------|
+| **Professional Support** | https://wazuh.com/services/professional-support/ | Support with SLA |
+| **Consulting Services** | https://wazuh.com/services/consulting-services/ | Expert consulting |
+| **Contact** | https://wazuh.com/contact-us/ | Contact information |
 
 ---
 
-**Ultimo Aggiornamento**: 31 gennaio 2026
-**Stato**: Tutti i link verificati ✅
+**Last Updated**: January 31, 2026
+**Status**: All links verified ✅
 
-Vedi [docs/index.md](../index.md) per la navigazione completa della documentazione.
+See [docs/index.md](../index.md) for complete documentation navigation.

@@ -1,208 +1,208 @@
-# Comprensione Tipi di Risorse
+# Understanding Resource Types
 
-Guida per navigare risorse ufficiali, di terze parti e community in awesome-wazuh.
-
----
-
-## 🔴 Risorse Wazuh Ufficiali
-
-**Mantenute da**: Team di sviluppo Wazuh
-**Supporto**: Supporto ufficiale completo
-**Qualità**: Audit e testati
-**Aggiornamenti**: Regolari e programmati
-
-### Cosa è Incluso
-- Documentazione core
-- Plugin ufficiali
-- Integrazioni native (Slack, PagerDuty, AWS, Azure, GCP, ecc.)
-- Materiali di formazione ufficiali
-- Aggiornamenti di sicurezza
-
-### Esempi
-- [Documentazione Ufficiale Wazuh](https://documentation.wazuh.com/)
-- [Plugin Dashboard Wazuh](https://github.com/wazuh/wazuh-dashboard-plugins)
-- [Blog Wazuh](https://wazuh.com/blog/)
-
-### Quando Usare
-- Per deployment di produzione
-- Per funzionalità critiche
-- Quando hai bisogno di supporto garantito
-- Per funzionalità sensibili alla sicurezza
-
-**Vedi**: [Database Link Ufficiali](./official-links.md)
+Guide to navigating official, third-party, and community resources in awesome-wazuh.
 
 ---
 
-## 🟡 Risorse Terze Parti
+## Official Wazuh Resources
 
-**Mantenute da**: Organizzazioni esterne
-**Supporto**: Supporto fornitore/creatore
-**Qualità**: Varia per fornitore
-**Aggiornamenti**: Varia
+**Maintained by**: Wazuh development team
+**Support**: Full official support
+**Quality**: Audited and tested
+**Updates**: Regular and scheduled
 
-### Cosa è Incluso
-- Piattaforme SOAR (Shuffle)
-- Piattaforme cloud (AWS, Azure, GCP al di là del supporto nativo)
-- Framework integrazione personalizzato
-- Strumenti aziendali
+### What's Included
+- Core documentation
+- Official plugins
+- Native integrations (Slack, PagerDuty, AWS, Azure, GCP, etc.)
+- Official training materials
+- Security updates
 
-### Esempi
+### Examples
+- [Official Wazuh Documentation](https://documentation.wazuh.com/)
+- [Wazuh Dashboard Plugins](https://github.com/wazuh/wazuh-dashboard-plugins)
+- [Wazuh Blog](https://wazuh.com/blog/)
+
+### When to Use
+- For production deployment
+- For critical features
+- When you need guaranteed support
+- For security-sensitive features
+
+**See**: [Official Links Database](./official-links.md)
+
+---
+
+## Third-Party Resources
+
+**Maintained by**: External organizations
+**Support**: Vendor/creator support
+**Quality**: Varies by vendor
+**Updates**: Varies
+
+### What's Included
+- SOAR platforms (Shuffle)
+- Cloud platforms (AWS, Azure, GCP beyond native support)
+- Custom integration frameworks
+- Enterprise tools
+
+### Examples
 - [Shuffle SOAR](https://shuffler.io/)
-- [Provider Terraform](https://github.com/grulicht/terraform-provider-wazuh)
-- Servizi supporto professionale
+- [Terraform Provider](https://github.com/grulicht/terraform-provider-wazuh)
+- Professional support services
 
-### Quando Usare
-- Per integrazioni specializzate
-- Quando hai bisogno di supporto enterprise
-- Per automazione avanzata
-- Quando combini con altri strumenti
+### When to Use
+- For specialized integrations
+- When you need enterprise support
+- For advanced automation
+- When combining with other tools
 
-### ⚠️ Considerazioni
-- La compatibilità potrebbe variare
-- Il supporto varia per fornitore
-- I termini di licenza potrebbero applicarsi
-- Revisione di sicurezza consigliata
-
----
-
-## 🟢 Risorse Community
-
-**Mantenute da**: Membri community Wazuh
-**Supporto**: Basato su community
-**Qualità**: Riviste dagli utenti
-**Aggiornamenti**: Best effort
-
-### Cosa è Incluso
-- Guide e tutorial community
-- Contenuti creati dagli utenti
-- Regole e script personalizzati
-- Contributi strumenti
-- Corsi e formazione
-- Post blog e video
-
-### Esempi
-- [Repository awesome-wazuh](https://github.com/francotampieri/awesome-wazuh)
-- Corsi community (Udemy, SIEM Intelligence, initMAX)
-- Discussioni community GitHub
-- Post blog e articoli
-
-### Quando Usare
-- Per apprendimento e sviluppo
-- Per funzionalità non critiche
-- Quando costruisci soluzioni personalizzate
-- Per ispirazione e idee
-
-### ⚠️ Considerazioni
-- Nessuna garanzia ufficiale
-- Il supporto è volontario
-- La qualità varia
-- Revisione di sicurezza consigliata prima della produzione
-
-**Vedi**: [Risorse Community](./community-resources.md) & [Plugin Community](./community-plugins.md)
+### Considerations
+- Compatibility may vary
+- Support varies by vendor
+- License terms may apply
+- Security review recommended
 
 ---
 
-## Confronto Rapido
+## Community Resources
 
-| Aspetto | Ufficiale | Terze Parti | Community |
+**Maintained by**: Wazuh community members
+**Support**: Community-based
+**Quality**: User reviewed
+**Updates**: Best effort
+
+### What's Included
+- Community guides and tutorials
+- User-created content
+- Custom rules and scripts
+- Tool contributions
+- Courses and training
+- Blog posts and videos
+
+### Examples
+- [awesome-wazuh Repository](https://github.com/francotampieri/awesome-wazuh)
+- Community courses (Udemy, SIEM Intelligence, initMAX)
+- GitHub community discussions
+- Blog posts and articles
+
+### When to Use
+- For learning and development
+- For non-critical features
+- When building custom solutions
+- For inspiration and ideas
+
+### Considerations
+- No official guarantees
+- Support is voluntary
+- Quality varies
+- Security review recommended before production
+
+**See**: [Community Resources](./community-resources.md) & [Community Plugins](./community-plugins.md)
+
+---
+
+## Quick Comparison
+
+| Aspect | Official | Third-Party | Community |
 |--------|----------|-------------|-----------|
-| **Supporto** | Team Wazuh ufficiale | Fornitore/Creatore | Community/Volontario |
-| **Manutenzione** | Regolare | Programmato | Best effort |
-| **Testing** | Comprehensive | Buono | Varia |
-| **Sicurezza** | Audit | Responsabilità fornitore | Responsabilità creatore |
-| **Aggiornamenti** | Regolari | Varia | Varia |
-| **SLA** | Disponibile | Talvolta | No |
-| **Costo** | Gratuito/Piani a pagamento | Spesso a pagamento | Gratuito |
-| **Production Ready** | ✅ | ⚠️ Verifica | ⚠️ Testa prima |
+| **Support** | Official Wazuh team | Vendor/Creator | Community/Volunteer |
+| **Maintenance** | Regular | Scheduled | Best effort |
+| **Testing** | Comprehensive | Good | Varies |
+| **Security** | Audit | Vendor responsibility | Creator responsibility |
+| **Updates** | Regular | Varies | Varies |
+| **SLA** | Available | Sometimes | No |
+| **Cost** | Free/Paid plans | Often paid | Free |
+| **Production Ready** | ✅ | ⚠️ Verify | ⚠️ Test first |
 
 ---
 
-## Albero Decisionale
+## Decision Tree
 
-### Scelta Tipo Risorsa
+### Choosing Resource Type
 
 ```
-Hai bisogno di supporto ufficiale e garanzia?
-  → SÌ: Usa risorse Ufficiali ⭐
-  → NO: Continua...
+Do you need official support and guarantee?
+  → YES: Use Official Resources ⭐
+  → NO: Continue...
 
-Hai bisogno di supporto enterprise-grade?
-  → SÌ: Considera Terze Parti ⚠️
-  → NO: Continua...
+Do you need enterprise-grade support?
+  → YES: Consider Third-Party ⚠️
+  → NO: Continue...
 
-Stai imparando o sperimentando?
-  → SÌ: Le risorse Community sono ottime! 🟢
-  → NO: Usa Ufficiale o Terze Parti
+Are you learning or experimenting?
+  → YES: Community Resources are great! 🟢
+  → NO: Use Official or Third-Party
 ```
 
 ---
 
-## Best Practice di Sicurezza
+## Security Best Practices
 
-### Risorse Ufficiali
-- ✅ Usa in produzione
-- ✅ Assumi security audit
-- ✅ Aggiornamenti di sicurezza regolari
+### Official Resources
+- ✅ Use in production
+- ✅ Assume security audits
+- ✅ Regular security updates
 
-### Risorse Terze Parti
-- ⚠️ Verifica reputazione fornitore
-- ⚠️ Rivedi politiche di sicurezza
-- ⚠️ Verifica frequenza aggiornamenti
-- ⚠️ Testa in staging prima
+### Third-Party Resources
+- ⚠️ Verify vendor reputation
+- ⚠️ Review security policies
+- ⚠️ Check update frequency
+- ⚠️ Test in staging first
 
-### Risorse Community
-- ⚠️ Revisione codice consigliata
-- ⚠️ Audit di sicurezza opzionale
-- ⚠️ Testa completamente prima della produzione
-- ⚠️ Considera piani di backup
-
----
-
-## Come Navigare awesome-wazuh
-
-### Per Tipo Risorsa
-- **Ufficiale**: [Link Ufficiali](./official-links.md)
-- **Community**: [Risorse Community](./community-resources.md)
-- **Plugin**: [Panoramica Plugin](../plugins/index.md) (con distinzione fonte)
-- **Integrazioni**: [Panoramica Integrazioni](../integrations/index.md) (con distinzione fonte)
-
-### Per Argomento
-- **Deployment**: [Guida Deployment](../deployment/index.md)
-- **Conformità**: [Framework Conformità](../compliance/index.md)
-- **Apprendimento**: [Avvio Rapido](../getting-started/quickstart.md) + [Risorse Ambasciatore](../ambassador/program.md)
+### Community Resources
+- ⚠️ Code review recommended
+- ⚠️ Optional security audit
+- ⚠️ Test thoroughly before production
+- ⚠️ Consider backup plans
 
 ---
 
-## Contribuire
+## Navigating awesome-wazuh
 
-### Invia Contenuto Community
+### By Resource Type
+- **Official**: [Official Links](./official-links.md)
+- **Community**: [Community Resources](./community-resources.md)
+- **Plugins**: [Plugins Overview](../plugins/index.md) (with source distinction)
+- **Integrations**: [Integrations Overview](../integrations/index.md) (with source distinction)
 
-1. **Post blog/tutorial**: Condividi su canali community
-2. **Plugin/strumento**: Invia PR a [awesome-wazuh](https://github.com/francotampieri/awesome-wazuh)
-3. **Integrazione**: Documenta e condividi via [GitHub Discussions](https://github.com/wazuh/wazuh/discussions)
-4. **Regola/script**: Condividi su Slack o crea GitHub issue
+### By Topic
+- **Deployment**: [Deployment Guide](../deployment/index.md)
+- **Compliance**: [Compliance Frameworks](../compliance/index.md)
+- **Learning**: [Quick Start](../getting-started/quickstart.md) + [Ambassador Resources](../ambassador/program.md)
+
+---
+
+## Contributing
+
+### Submit Community Content
+
+1. **Blog/tutorial**: Share on community channels
+2. **Plugin/tool**: Submit PR to [awesome-wazuh](https://github.com/francotampieri/awesome-wazuh)
+3. **Integration**: Document and share via [GitHub Discussions](https://github.com/wazuh/wazuh/discussions)
+4. **Rule/script**: Share on Slack or create GitHub issue
 
 ---
 
 ## FAQ
 
-**D: Dovrei usare integrazioni community in produzione?**
-A: Testa completamente in staging prima. Le integrazioni ufficiali sono più sicure per la produzione.
+**Q: Should I use community integrations in production?**
+A: Test thoroughly in staging first. Official integrations are safer for production.
 
-**D: Come so se qualcosa è sicuro?**
-A: Le risorse ufficiali sono audit. Per altre, rivedi codice, verifica reputazione manutentore, testa.
+**Q: How do I know if something is safe?**
+A: Official resources are audited. For others, review code, verify maintainer reputation, test thoroughly.
 
-**D: Posso contribuire a Wazuh ufficiale?**
-A: Sì! Vedi [Guida Contribuzione](https://github.com/wazuh/wazuh/blob/master/CONTRIBUTING.md)
+**Q: Can I contribute to official Wazuh?**
+A: Yes! See [Contributing Guide](https://github.com/wazuh/wazuh/blob/master/CONTRIBUTING.md)
 
-**D: Cosa se una risorsa community è abbandonata?**
-A: Verifica stelle GitHub, data ultimo commit, feedback community. Tieni piano B.
+**Q: What if a community resource is abandoned?**
+A: Check GitHub stars, last commit date, community feedback. Keep a backup plan.
 
 ---
 
-**Ultimo Aggiornamento**: 31 gennaio 2026
+**Last Updated**: January 31, 2026
 
-Vedi anche:
-- [Panoramica Plugin](../plugins/index.md)
-- [Panoramica Integrazioni](../integrations/index.md)
-- [Guida Contribuzione](../../CONTRIBUTING.md)
+See also:
+- [Plugins Overview](../plugins/index.md)
+- [Integrations Overview](../integrations/index.md)
+- [Contributing Guide](../../CONTRIBUTING.md)

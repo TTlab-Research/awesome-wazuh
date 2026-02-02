@@ -1,371 +1,226 @@
-# Architettura del Progetto & Organizzazione
+# Project Architecture
 
-Documentazione della struttura del progetto Awesome Wazuh, logica e linee guida.
+awesome-wazuh is a curated index of Wazuh resources following the awesome-* project standard.
 
-## 📐 Struttura Directory
+## 📁 Directory Structure
 
 ```
 awesome-wazuh/
-├── README.md                          # Voce principale (elenco curato)
-├── LICENSE                            # MIT License
-├── CONTRIBUTING.md                    # Linee guida di contribuzione
-├── CONTRIBUTORS.md                    # Contributori e riconoscimenti
-├── ARCHITECTURE.md                    # Questo file
+├── README.md                    # Main entry point - curated link index
+├── LICENSE                      # MIT License
+├── CONTRIBUTING.md              # Contribution guidelines
+├── CONTRIBUTORS.md              # Contributors list
+├── ARCHITECTURE.md              # This file
 │
-├── docs/                              # Hub di guide & documentazione comprehensive
-│   ├── index.md                       # Pagina iniziale documentazione & navigazione
-│   │
-│   ├── getting-started/               # Risorse per principianti
-│   │   └── quickstart.md              # Avvio rapido 5 minuti
-│   │
-│   ├── deployment/                    # Guide infrastruttura & DevOps
-│   │   ├── index.md                   # Panoramica deployment & matrice decisionale
-│   │   ├── docker.md                  # Guida deployment Docker
-│   │   ├── kubernetes.md              # Guida deployment Kubernetes
-│   │   ├── terraform.md               # Guida Terraform/OpenTofu
-│   │   ├── ansible.md                 # Guida deployment Ansible
-│   │   └── cloud.md                   # Piattaforme cloud (AWS, Azure, GCP, SaaS)
-│   │
-│   ├── compliance/                    # Conformità & framework normativi
-│   │   ├── index.md                   # Panoramica di 7 framework di conformità
-│   │   ├── pci-dss.md                 # Guida specifica PCI-DSS
-│   │   ├── gdpr.md                    # Guida specifica GDPR
-│   │   ├── nis2.md                    # Guida specifica NIS-2
-│   │   ├── iso-27001.md               # Guida specifica ISO 27001
-│   │   ├── hipaa.md                   # Guida specifica HIPAA
-│   │   ├── nist-800-53.md             # Guida specifica NIST 800-53
-│   │   └── tsc.md                     # Guida specifica TSC
-│   │
-│   ├── ambassador/                    # Risorse community & partnership
-│   │   ├── program.md                 # Panoramica programma ambasciatore
-│   │   ├── content-creation.md        # Linee guida e idee per i contenuti
-│   │   ├── partnerships.md            # Programmi partnership & referral
-│   │   ├── certification-training.md  # Percorsi formazione e certificazione
-│   │   ├── events-speaking.md         # Opportunità conferenze e speaking
-│   │   └── community-leadership.md    # Ruoli di leadership nella community
-│   │
-│   ├── guides/                        # Guide how-to per gli operatori
-│   │   ├── integrations.md            # Tutorial integrazioni
-│   │   ├── rules-detection.md         # Creazione regole personalizzate
-│   │   ├── active-response.md         # Configurazione risposta automatizzata
-│   │   └── security-best-practices.md # Hardening della sicurezza & ottimizzazione
-│   │
-│   └── resources/                     # Materiali di riferimento & link
-│       ├── official-links.md          # 48+ risorse ufficiali verificate
-│       ├── community-channels.md      # Slack, Discord, Reddit, GitHub
-│       └── quick-reference.md         # Tabelle di lookup & fatti rapidi
+├── docs/                        # Reference & supplementary guides
+│   ├── index.md                 # Navigation hub (internal reference)
+│   ├── deployment.md            # Deployment methods overview
+│   ├── compliance.md            # Compliance frameworks reference
+│   ├── integrations.md          # Integration guide
+│   ├── rules.md                 # Rules & detection reference
+│   ├── ambassador.md            # Ambassador program info
+│   ├── getting-started/
+│   │   └── quickstart.md        # Quick start for beginners
+│   └── resources/
+│       ├── official-links.md    # Verified official resources
+│       ├── community-resources.md # Community content
+│       └── source-guide.md      # Resource type explanations
 │
-├── examples/                          # Template pronti all'uso
-│   ├── docker-compose/                # Deployment Docker
-│   │   └── docker-compose.yml
-│   ├── terraform/                     # Deployment IaC
-│   │   ├── main.tf
-│   │   └── variables.tf
-│   ├── ansible/                       # Deployment multi-host
-│   │   ├── playbook.yml
-│   │   └── hosts.ini
-│   └── README.md                      # Guida esempi con troubleshooting
+├── examples/                    # Ready-to-use templates
+│   ├── docker-compose/          # Docker deployment
+│   ├── terraform/               # Infrastructure as Code
+│   ├── ansible/                 # Multi-host automation
+│   └── README.md                # Examples guide
 │
-└── .gitignore                         # Regole git ignore
+└── .gitignore                   # Git ignore rules
 ```
 
----
+## 🎯 Design Principles
 
-## 🎯 Principi di Design
+### 1. **Awesome-* Standard**
+- README.md is the single entry point (not scattered across docs/)
+- Pure link index format (link + 1-2 line description)
+- Badge system: 🔴 Official | 🟢 Community
+- No content duplication of official Wazuh documentation
+- Link to official docs, not replicate them
 
-### 1. **Scopribilità**
-- README è il punto di ingresso
-- Indice dei contenuti chiaro con link
-- Organizzato per caso d'uso, non alfabeticamente
-- Intestazioni facili da cercare
+### 2. **Discoverability**
+- Complete Table of Contents in README
+- Clear categories organized by use case
+- Searchable (Ctrl+F) with logical heading hierarchy
+- Prominent Synology section (community use case)
 
-### 2. **Verifica**
-- ✅ **Verifica link 100%** - Tutti gli URL testati prima della pubblicazione
-- ✅ **Informazioni attuali** - Aggiornato mensilmente
-- ✅ **Accuratezza** - Nessun marketing fluff, solo accuratezza tecnica
-- ✅ **Accessibilità** - HTTP 200 confermato per tutti i link
+### 3. **Practicality**
+- Links to real resources (no marketing)
+- Verified HTTP 200 status
+- Concrete, useful descriptions
+- Examples for hands-on learning
 
-### 3. **Accessibilità**
-- Livelli di difficoltà multipli: Principiante → Avanzato
-- Navigazione per diversi ruoli (DevOps, CISO, analista SOC)
-- Esempi pratici per ogni sezione principale
-- Prerequisiti e requisiti chiari
+### 4. **Accessibility**
+- Beginner-friendly overview in README
+- Multiple difficulty levels referenced
+- Different roles (DevOps, CISO, SOC)
+- Multiple deployment options shown
 
-### 4. **Praticità**
-- Esempi pronti all'uso (non solo teoria)
-- Scenari e casi d'uso nel mondo reale
-- Orientamenti operativi (non solo puntatori di documentazione)
-- Troubleshooting & best practice
+### 5. **Maintainability**
+- Single source of truth (README)
+- Supporting docs/ for context only
+- No redundancy (link → official, not replicate)
+- Easy to add/remove resources
 
-### 5. **Completezza**
-- Copertura di tutte le principali capacità Wazuh
-- Framework di conformità (NIS-2, ISO 27001, GDPR, PCI-DSS, ecc.)
-- Opzioni di integrazione (SOAR, ticketing, piattaforme cloud)
-- Percorsi di apprendimento (da principiante a avanzato)
-
----
-
-## 📄 Logica di Organizzazione dei File
+## 📄 File Purposes
 
 ### README.md
-**Proposito**: Elenco curato principale + gateway del repository
-**Audience**: Tutti
-**Aggiornamenti**: Mensile (verifica link)
-**Stile**: Professionale ma accessibile
-**Lunghezza**: ~300-400 righe (scorribile)
+**Type**: Main curated index
+**Audience**: Everyone
+**Content**: Links to all major Wazuh resources
+**Format**: Markdown with badges and TOC
+**Update**: Monthly link verification
+**Lines**: ~200-250 (scrollable, not overwhelming)
 
-### docs/ - Guide Comprehensive
-**Proposito**: Documentazione approfondita
-**Audience**: Professionisti che necessitano di orientamenti dettagliati
-**Aggiornamenti**: Trimestrale
-**Copertura**:
-- **DEPLOYMENT_GUIDE.md** - Tutti i metodi deployment con pro/contro
-- **COMPLIANCE_REFERENCE.md** - Mappature framework di conformità
+### docs/
 
-### examples/ - Codice Pronto all'Uso
-**Proposito**: Ridurre il time-to-value con template funzionanti
-**Audience**: DevOps, ingegneri che implementano Wazuh
-**Formati**:
-- Docker Compose (più veloce per il deployment)
-- Terraform/OpenTofu (best practice IaC)
-- Ansible (automazione multi-host)
+Used for supplementary reference only - NOT the main navigation.
 
-### File di Supporto
-- **LICENSE** - MIT (permissivo, incoraggia l'uso)
-- **CONTRIBUTING.md** - Linee guida di collaborazione
-- **CONTRIBUTORS.md** - Riconoscimento e ringraziamenti
-- **ARCHITECTURE.md** - Questo file (meta-documentazione)
+**docs/deployment.md**: Overview of deployment options with decision matrix
+**docs/compliance.md**: Compliance framework reference
+**docs/integrations.md**: Integration categories and examples
+**docs/rules.md**: Rules, detection modules, Synology-specific content
+**docs/ambassador.md**: Ambassador program information
+**docs/index.md**: Internal hub (reference only, not entry point)
 
----
+### examples/
 
-## 🔄 Categorie di Contenuto
+Ready-to-use templates for different deployment scenarios:
+- **docker-compose/**: Single-node or multi-node Docker setup
+- **terraform/**: Cloud infrastructure as code (OpenTofu compatible)
+- **ansible/**: Multi-host deployment automation
 
-### SEZIONI PRIMARIE (README.md)
+### Support Files
 
-1. **Risorse Ufficiali** - Contenuti creati da Wazuh
-2. **Deployment & Infrastruttura** - Come installare/eseguire
-3. **Conformità & Governance** - Framework normativi
-4. **Integrazioni & Estensioni** - Connessione all'ecosistema
-5. **Rilevamento & Risposta** - Monitoraggio della sicurezza
-6. **Apprendimento & Formazione** - Acquisizione di conoscenze
-7. **Community & Supporto** - Ricevere aiuto
-8. **Ambienti di Test** - Pratica pratica
+- **LICENSE**: MIT (permissive, encourages use)
+- **CONTRIBUTING.md**: How to contribute resources
+- **CONTRIBUTORS.md**: Credits and acknowledgments
+- **ARCHITECTURE.md**: This file
 
-### SEZIONI SECONDARIE (docs/)
+## 🔗 Content Organization
 
-- **DEPLOYMENT_GUIDE.md**
-  - Docker (dev/test)
-  - Kubernetes (produzione)
-  - Terraform/OpenTofu (IaC)
-  - Ansible (multi-host)
-  - Piattaforme cloud (AWS, Azure, GCP)
-  - Matrice decisionale
+### README.md Sections
 
-- **COMPLIANCE_REFERENCE.md**
-  - PCI-DSS (sicurezza pagamenti)
-  - GDPR (privacy)
-  - NIS-2 (infrastruttura critica EU)
-  - ISO 27001 (sicurezza informatica)
-  - HIPAA (assistenza sanitaria)
-  - NIST 800-53 (standard federali)
-  - TSC (trust services)
+1. **Official Documentation** - Wazuh official resources
+2. **Getting Started** - Entry points for new users
+3. **Deployment** - Installation methods (Docker, K8s, Terraform, Ansible, Cloud)
+4. **Rules & Detection** - Wazuh detection capabilities + Synology NAS (vendor-specific)
+5. **Integrations** - External platform connections (Alerting, Ticketing, Threat Intel, Cloud, SOAR)
+6. **Compliance** - Regulatory framework mappings
+7. **Training & Certification** - Learning resources
+8. **Ambassador Program** - Community leadership opportunities
+9. **Community** - Support and networking
+10. **Contributing** - How to contribute
 
----
+### docs/ Sections
 
-## 📊 Classificazione delle Risorse
+Reference and supplementary content. These are NOT primary navigation - they support the README links.
 
-### Ufficiale vs. Community
-- **Ufficiale**: Creato/mantenuto da Wazuh
-- **Community**: Mantenuto dalla community
-- **Terze parti**: Prodotti commerciali non-Wazuh
+- **deployment.md**: Decision matrix + overview of deployment methods
+- **compliance.md**: Summary of compliance frameworks
+- **integrations.md**: Integration categories and options
+- **rules.md**: Rules and detection modules with Synology vendor content
+- **ambassador.md**: Ambassador program details
+- **getting-started/quickstart.md**: Beginner quick start
+- **resources/*.md**: Detailed resource lists
 
-### Livelli di Maturità
-- ✅ **Production-Ready**: Verificato, stabile
-- ⚠️ **Sperimentale**: Beta o funzionalità nuove
-- ❌ **Deprecato**: Non più consigliato
+## 📊 Link Classification
 
-### Livelli di Difficoltà
-- **Principiante**: 0-6 mesi di esperienza Wazuh
-- **Intermedio**: 6-12 mesi di esperienza
-- **Avanzato**: 12+ mesi, conoscenze approfondite
+### Badges
 
----
+- 🔴 **Official**: Created/maintained by Wazuh
+- 🟢 **Community**: Community-created or maintained
+- 🟡 **Third-party**: Non-Wazuh commercial products
 
-## 🔗 Standard di Qualità dei Link
+### Link Quality Standards
 
-### Checklist di Verifica
-- [ ] URL è accessibile (HTTP 200)
-- [ ] Il contenuto è rilevante per Wazuh
-- [ ] Le informazioni sono attuali (non obsolete)
-- [ ] Nessun reindirizzamento verso diversi domini
-- [ ] I file PDF sono leggibili (se applicabile)
+✅ URL is accessible (HTTP 200)
+✅ Content is relevant to Wazuh
+✅ Information is current (not obsolete)
+✅ Description is concrete (no marketing language)
+✅ 1-2 lines maximum
 
-### Frequenza di Aggiornamento
-- **Documentazione Ufficiale**: Controllo mensile
-- **Blog Post**: Revisione trimestrale
-- **Strumenti Esterni**: Annualmente
-- **Contenuti Community**: Trimestrale
+## 🔄 Update Frequency
 
-### Politica dei Link Morti
-1. Testare il link trimestralmente
-2. Se rotto: Contattare autore/manutentore
-3. Se irraggiungibile per 1 mese: Rimuovere con nota
-4. Archiviare in GitHub Issues per riferimento
+- **README.md**: Monthly link verification
+- **docs/*.md**: Quarterly review
+- **examples/**: Monthly (ensure working templates)
+- **Full audit**: Annually
 
----
+## 🚀 Why This Structure?
 
-## 👥 Workflow di Contribuzione
+**Why README is the entry point:**
+- Familiar to everyone (standard for GitHub projects)
+- Single place to find everything
+- Easy to maintain (one file, not scattered)
+- awesome-* standard format
 
-### Aggiunta di Nuove Risorse
+**Why docs/ is supplementary:**
+- Provides context for reference
+- Not meant to duplicate official Wazuh docs
+- Links to official docs for full details
+- Keeps README focused
 
-1. **Verifica**: Testare accessibilità link
-2. **Categorizzazione**: Determinare la sezione corretta
-3. **Descrizione**: Scrivere descrizione di 1-2 righe
-4. **Formattazione**: Abbinare lo stile esistente
-5. **Invio PR**: Includere stato di verifica
-6. **Revisione**: Il manutentore controlla la qualità
-7. **Merge**: Aggiunto all'elenco awesome
+**Why examples/ included:**
+- Reduces time-to-value
+- Real, working deployment code
+- Multiple platforms (Docker, Terraform, Ansible)
+- Hands-on learning
 
-### Revisione dei Contributi
+**Why no large internal guides:**
+- Official Wazuh documentation exists
+- Linking prevents duplication
+- Reduces maintenance burden
+- Stays true to awesome-* format
 
-**Checklist**:
-- [ ] Link è accessibile
-- [ ] Il contenuto è rilevante
-- [ ] Nessun duplicato
-- [ ] La descrizione è chiara
-- [ ] La formattazione è coerente
-- [ ] Collocato nella categoria corretta
-- [ ] Nessun linguaggio di marketing
+## 👥 Governance
 
----
+### Contributing Process
 
-## 📈 Crescita & Scalabilità
+1. Verify link works (HTTP 200)
+2. Identify correct category and badge
+3. Write 1-2 line description (concrete, useful)
+4. Submit PR with link verification
+5. Maintainer reviews and merges
 
-### Fase 1 (Gennaio 2026 - Presente)
-- ✅ 48+ risorse iniziali verificate
-- ✅ 6 framework di conformità
-- ✅ 3 template di esempio
-- ✅ 2 guide comprehensive
+### Maintenance Responsibilities
 
-### Fase 2 (Q1-Q2 2026)
-- Target: 100+ risorse
-- Aggiungi: Playbook specifici per industria
-- Aggiungi: Link video tutorial
-- Espandi: Lingue regionali
+**Monthly**:
+- Check critical links (official docs)
+- Review submitted resources
 
-### Fase 3 (Q3-Q4 2026)
-- Target: 150+ risorse
-- Aggiungi: Case study della community
-- Aggiungi: Link certificazione avanzata
-- Stabilisci: Programma contributore
+**Quarterly**:
+- Full link audit
+- Update compliance information
+- Review compliance framework changes
 
-### Fase 4 (2027+)
-- Candidato per organizzazione Wazuh ufficiale
-- Integrazione con sito web Wazuh
-- Modello di governance della community
+**Annually**:
+- Architecture review
+- Category effectiveness evaluation
+- Plan major updates
 
----
+## 🔐 Code of Conduct
 
-## 🔐 Responsabilità di Manutenzione
+- Respectful communication
+- No harassment or discrimination
+- Good faith in contributions assumed
+- Conflicts handled professionally
 
-### Mensile
-- [ ] Verificare link critici (docs ufficiali, blog)
-- [ ] Controllare link interrotti (GitHub issues)
-- [ ] Rivedere nuove risorse inviate
-- [ ] Aggiornare numeri di versione
-
-### Trimestrale
-- [ ] Audit completo link
-- [ ] Aggiornare informazioni sulla conformità
-- [ ] Rivedere e merge PR
-- [ ] Aggiornare statistiche
-- [ ] Pubblicare contributor spotlight
-
-### Annualmente
-- [ ] Revisione architettura
-- [ ] Valutazione efficacia categoria
-- [ ] Pianificare grandi aggiornamenti
-- [ ] Riconoscimento contributori
-
----
-
-## 🚀 Decisioni Tecniche
-
-### Perché Markdown?
-- ✅ Testo semplice (version control friendly)
-- ✅ Rendering nativo su GitHub
-- ✅ Facile da leggere e modificare
-- ✅ Portatile e a prova di futuro
-
-### Perché Non Un Database?
-- ✅ Semplicità (git = version control)
-- ✅ Trasparenza (tutti i cambiamenti visibili)
-- ✅ Capacità offline
-- ✅ I contributi della community sono più facili
-
-### Perché Questa Struttura?
-- ✅ README = accesso rapido
-- ✅ docs/ = riferimenti approfonditi
-- ✅ examples/ = apprendimento pratico
-- ✅ Supporta stili di apprendimento multipli
-
-### Perché Più Esempi?
-- Docker: Curva di apprendimento veloce
-- Terraform: Pratica moderna IaC
-- Ansible: Integrazione infrastruttura esistente
-- Copertura: Diversi casi d'uso
-
----
-
-## 📋 Miglioramenti Futuri
-
-### Sotto Considerazione
-- [ ] Database/frontend ricercabile
-- [ ] Verificatore link automatico
-- [ ] Versioni multilingue
-- [ ] Indice contenuti video
-- [ ] Strumenti interattivi
-- [ ] Dashboard tracciamento contribuzioni
-
-### Partnership Potenziali
-- [ ] Elenco awesome ufficiale Wazuh
-- [ ] Hub di risorse TTlab®
-- [ ] Aggregatori della community di sicurezza
-- [ ] Piattaforme educative
-
----
-
-## 📞 Governance
-
-### Processo Decisionale
-- **Quotidiano**: Discretione del manutentore
-- **Cambiamenti Maggiori**: Discussione della community (GitHub Issues)
-- **Cambiamenti di Policy**: Consenso dei contributori
-
-### Risoluzione dei Conflitti
-1. **Discuti**: GitHub Issues
-2. **Proponi**: PR con logica
-3. **Consenso**: Feedback della community
-4. **Decidi**: Decisione del manutentore
-5. **Documenta**: Aggiorna ARCHITECTURE.md
-
-### Codice di Condotta
-- Comunicazione rispettosa
-- Nessun molestia o discriminazione
-- Buona fede nei contributi assunta
-- I conflitti sono gestiti privatamente per primi
-
----
-
-## 📚 Riferimenti
+## 📚 References
 
 - [Awesome Manifest](https://github.com/sindresorhus/awesome/blob/main/awesome.md)
-- [Tieni un Changelog](https://keepachangelog.com/)
-- [Versionamento Semantico](https://semver.org/)
-- [Linee Guida per Contribuire](./CONTRIBUTING.md)
+- [awesome-mac](https://github.com/jaywcjlove/awesome-mac) - Example model
+- [Contributing Guidelines](./CONTRIBUTING.md)
 
 ---
 
-**Ultimo Aggiornamento**: 31 gennaio 2026
-**Versione**: 1.0
-**Stato**: Sviluppo Attivo
+**Last Updated**: February 2, 2026
+**Version**: 2.0 (refactored to pure awesome-* format)
+**Status**: Active Curation
+**Curator**: Franco Tampieri (TTlab® - Security & DevOps)

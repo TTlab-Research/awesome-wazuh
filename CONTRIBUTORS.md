@@ -1,197 +1,197 @@
-# Contributori & Riconoscimenti
+# Contributors & Credits
 
-## 🏆 Manutentore del Progetto
+## 🏆 Project Maintainer
 
 **Franco Tampieri**
-- 🏢 [TTlab® - Sicurezza & DevOps](https://ttlab.it/)
-- 🎓 CISO, MSP, Architetto DevOps, Consulente di Sicurezza
+- 🏢 [TTlab® - Security & DevOps](https://ttlab.it/)
+- 🎓 CISO, MSP, DevOps Architect, Security Consultant
 - 📧 franco.tampieri@ttlab.it
 - 🔗 [GitHub](https://github.com/francotampieri) | [LinkedIn](https://linkedin.com/in/francotampieri)
-- 🎯 **Missione**: Candidatura per Ambasciatore Wazuh
+- 🎯 **Mission**: Candidacy for Wazuh Ambassador Program
 
 ---
 
-## 👥 Contributori
+## 👥 Contributors
 
-### Ricerca & Verifica (v1.0)
-- **Ricerca Iniziale**: Audit completo dell'ecosistema Wazuh
-- **Verifica Link**: 100% accessibilità confermata (31 gennaio 2026)
-- **Mappatura Conformità**: NIS-2, ISO 27001, GDPR, PCI-DSS, HIPAA
-- **Esempi**: Template Docker, Terraform/OpenTofu, Ansible
+### Research & Verification (v1.0)
+- **Initial Research**: Complete audit of Wazuh ecosystem
+- **Link Verification**: 100% accessibility confirmed (January 31, 2026)
+- **Compliance Mapping**: NIS-2, ISO 27001, GDPR, PCI-DSS, HIPAA
+- **Examples**: Docker, Terraform/OpenTofu, Ansible templates
 
-### Feedback della Community - Benvenuti!
-Cerchiamo contributi in:
+### Community Feedback - Welcome!
+We're looking for contributions in:
 
-- **Localizzazione Regionale**: Guide in Spagnolo, Francese, Tedesco, Italiano
-- **Guide Specifiche per Settore**: Esempi per Healthcare, Finanza, Retail
-- **Collezioni di Regole Personalizzate**: Regole di rilevamento adattate all'industria
-- **Template di Integrazione**: Integrazioni con piattaforme SaaS
-- **Case Study**: Storie di deployment nel mondo reale
-- **Tutorial Video**: Video YouTube/demo
-- **Articoli Blog**: Deep-dive tecnici
-
----
-
-## 🙏 Riconoscimenti
-
-### Team Ufficiale Wazuh
-- **Sviluppo Wazuh**: Piattaforma core e funzionalità
-- **Documentazione Wazuh**: Riferimento comprehensive
-- **Community Wazuh**: Supporto e feedback
-- **Programma Ambasciatore Wazuh**: Riconoscimento e collaborazione
-
-### Contributori della Community
-- **grulicht**: [Provider Terraform per Wazuh](https://github.com/grulicht/terraform-provider-wazuh)
-- **Manutentori Docker Wazuh**: Repository Docker ufficiale
-- **Manutentori Kubernetes Wazuh**: Chart Helm ufficiali
-- **Manutentori Ansible Wazuh**: Playbook Ansible ufficiali
-
-### Community di Sicurezza
-- Professionisti open-source della sicurezza
-- Specialisti SIEM e rilevamento minacce
-- Ingegneri di automazione DevOps
-- Ricercatori di sicurezza e consulenti
-
-### Strumenti e Piattaforme
-- [GitHub](https://github.com) - Hosting del repository
-- [Awesome.re](https://awesome.re) - Manifesto Awesome
-- [Context7](https://context7.ai) - Ricerca documentazione
-- [1Password](https://1password.com) - Gestione segreti
-- [Wazuh Cloud](https://wazuh.com/cloud/) - Piattaforma di apprendimento
+- **Regional Localization**: Guides in Spanish, French, German, Italian
+- **Industry-Specific Guides**: Examples for Healthcare, Finance, Retail
+- **Custom Rule Collections**: Industry-tailored detection rules
+- **Integration Templates**: SaaS platform integrations
+- **Case Studies**: Real-world deployment stories
+- **Video Tutorials**: YouTube/demo videos
+- **Blog Articles**: Technical deep-dives
 
 ---
 
-## 📝 Come Contribuire
+## 🙏 Acknowledgments
 
-### Diventa un Contributore
+### Official Wazuh Team
+- **Wazuh Development**: Core platform and features
+- **Wazuh Documentation**: Comprehensive reference
+- **Wazuh Community**: Support and feedback
+- **Wazuh Ambassador Program**: Recognition and collaboration
 
-1. **Fork** il repository
-2. **Aggiungi o migliora** il contenuto
-3. **Invia una PR** con descrizione chiara
-4. **Ottieni revisione** e merge
-5. **Ottieni credito** qui!
+### Community Contributors
+- **grulicht**: [Terraform Provider for Wazuh](https://github.com/grulicht/terraform-provider-wazuh)
+- **Wazuh Docker Maintainers**: Official Docker repository
+- **Wazuh Kubernetes Maintainers**: Official Helm charts
+- **Wazuh Ansible Maintainers**: Official Ansible playbooks
 
-Vedi [CONTRIBUTING.md](./CONTRIBUTING.md) per le linee guida complete.
+### Security Community
+- Open-source security professionals
+- SIEM and threat detection specialists
+- DevOps automation engineers
+- Security researchers and consultants
 
-### Livelli di Riconoscimento
-
-#### Gold Contributor (3+ contributi sostanziali)
-- Elencato in README.md
-- Menzione organizzazione GitHub
-- Articolo di presentazione sul blog TTlab
-- Invitato al meeting annuale dei contributori
-
-#### Silver Contributor (1-2 contributi sostanziali)
-- Elencato in CONTRIBUTORS.md
-- Menzione GitHub nella PR
-- Shout-out sui social media
-
-#### Bronze Contributor (Correzioni minori/suggerimenti)
-- Elencato in CONTRIBUTORS.md
-- Riconoscimento GitHub
+### Tools and Platforms
+- [GitHub](https://github.com) - Repository hosting
+- [Awesome.re](https://awesome.re) - Awesome manifest
+- [Context7](https://context7.ai) - Documentation research
+- [1Password](https://1password.com) - Secrets management
+- [Wazuh Cloud](https://wazuh.com/cloud/) - Learning platform
 
 ---
 
-## 🎯 Idee di Contribuzione
+## 📝 How to Contribute
 
-### Priorità Alta
-- [ ] Versioni in lingue regionali (ES, FR, DE, IT)
-- [ ] Playbook per industria (Healthcare, Finanza, Retail)
-- [ ] Moduli Terraform avanzati
-- [ ] Chart Helm Kubernetes
-- [ ] Esempi di integrazione CI/CD
+### Become a Contributor
 
-### Priorità Media
-- [ ] Tutorial video
-- [ ] Case study (anonimizzati)
-- [ ] Guide di tuning delle performance
-- [ ] Runbook di troubleshooting
-- [ ] Repository di regole personalizzate
+1. **Fork** the repository
+2. **Add or improve** content
+3. **Submit a PR** with clear description
+4. **Get review** and merge
+5. **Get credit** here!
 
-### Da Avere
-- [ ] Articoli blog
-- [ ] Apparizioni podcast
-- [ ] Proposte per talk in conferenza
-- [ ] Link corsi di formazione
-- [ ] Integrazioni di strumenti
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for complete guidelines.
 
----
+### Recognition Levels
 
-## 🤝 Codice di Condotta
+#### Gold Contributor (3+ substantial contributions)
+- Listed in README.md
+- GitHub organization mention
+- Blog post feature on TTlab
+- Invited to annual contributor meeting
 
-Tutti i contributori devono rispettare:
+#### Silver Contributor (1-2 substantial contributions)
+- Listed in CONTRIBUTORS.md
+- GitHub mention in PR
+- Social media shout-out
 
-- **Rispetto**: Tratta tutti i contributori con rispetto
-- **Professionalità**: Mantieni una comunicazione professionale
-- **Inclusività**: Accogli background e prospettive diverse
-- **Trasparenza**: Sii onesto su capacità e limitazioni
-- **Collaborazione**: Lavora insieme per il beneficio della community
-
-**Segnala violazioni a**: franco.tampieri@ttlab.it
+#### Bronze Contributor (Minor fixes/suggestions)
+- Listed in CONTRIBUTORS.md
+- GitHub recognition
 
 ---
 
-## 📊 Statistiche di Contribuzione
+## 🎯 Contribution Ideas
 
-| Metrica | Valore |
-|--------|--------|
-| **Repository Creato** | 31 gennaio 2026 |
-| **Risorse Iniziali** | 48+ link verificati |
-| **Pagine di Documentazione** | 4 guide comprehensive |
-| **Esempi di Lab** | 3 setup pronti all'uso |
-| **Framework di Conformità** | 6 framework mappati |
-| **Contributori (v1.0)** | 1 (Franco Tampieri) |
+### High Priority
+- [ ] Regional language versions (ES, FR, DE, IT)
+- [ ] Industry playbooks (Healthcare, Finance, Retail)
+- [ ] Advanced Terraform modules
+- [ ] Kubernetes Helm charts
+- [ ] CI/CD integration examples
 
----
+### Medium Priority
+- [ ] Video tutorials
+- [ ] Case studies (anonymized)
+- [ ] Performance tuning guides
+- [ ] Troubleshooting runbooks
+- [ ] Custom rule repository
 
-## 🎁 Benefici per i Contributori
-
-### Non Monetari
-- ✅ Riconoscimento pubblico
-- ✅ Esposizione del profilo GitHub
-- ✅ Visibilità nella community
-- ✅ Opportunità di apprendimento
-- ✅ Networking con esperti Wazuh
-
-### Opportunità Potenziali
-- 🎤 Parlare agli eventi Wazuh
-- 📝 Collaborazione blog
-- 💼 Referral di consulenza
-- 🤝 Opportunità di partnership
-- 🏆 Riconoscimento della community Wazuh
+### Nice to Have
+- [ ] Blog articles
+- [ ] Podcast appearances
+- [ ] Conference talk proposals
+- [ ] Training course links
+- [ ] Tool integrations
 
 ---
 
-## 📞 Contattami
+## 🤝 Code of Conduct
 
-### Contatto Diretto
+All contributors must respect:
+
+- **Respect**: Treat all contributors with respect
+- **Professionalism**: Maintain professional communication
+- **Inclusivity**: Welcome diverse backgrounds and perspectives
+- **Transparency**: Be honest about abilities and limitations
+- **Collaboration**: Work together for community benefit
+
+**Report violations to**: franco.tampieri@ttlab.it
+
+---
+
+## 📊 Contribution Statistics
+
+| Metric | Value |
+|--------|-------|
+| **Repository Created** | January 31, 2026 |
+| **Initial Resources** | 48+ verified links |
+| **Documentation Pages** | 4 comprehensive guides |
+| **Lab Examples** | 3 ready-to-use setups |
+| **Compliance Frameworks** | 6 frameworks mapped |
+| **Contributors (v1.0)** | 1 (Franco Tampieri) |
+
+---
+
+## 🎁 Benefits for Contributors
+
+### Non-Monetary
+- ✅ Public recognition
+- ✅ GitHub profile exposure
+- ✅ Community visibility
+- ✅ Learning opportunities
+- ✅ Networking with Wazuh experts
+
+### Potential Opportunities
+- 🎤 Speaking at Wazuh events
+- 📝 Blog collaboration
+- 💼 Consulting referrals
+- 🤝 Partnership opportunities
+- 🏆 Wazuh community recognition
+
+---
+
+## 📞 Contact Me
+
+### Direct Contact
 - **Email**: franco.tampieri@ttlab.it
 - **GitHub**: [@francotampieri](https://github.com/francotampieri)
 
-### Canali della Community
+### Community Channels
 - **Wazuh Slack**: [wazuh.com/community](https://wazuh.com/community/)
 - **GitHub Discussions**: [awesome-wazuh](https://github.com/francotampieri/awesome-wazuh/discussions)
 
 ---
 
-## 📅 Spotlight dei Contributori
+## 📅 Contributor Spotlight
 
-### Programma Spotlight
-- **Mensile**: Presenta la storia di un contributore
-- **Trimestrale**: Statistiche di contribuzione
-- **Annualmente**: Award per i contributori principali
+### Spotlight Program
+- **Monthly**: Feature contributor's story
+- **Quarterly**: Contribution statistics
+- **Annually**: Award for major contributors
 
-**Primo Spotlight**: TBD (in attesa di contributi!)
-
----
-
-## 💝 Ringraziamenti Speciali
-
-> *"La sicurezza è uno sforzo collettivo. Ogni contributo, per quanto piccolo, rafforza la nostra difesa collettiva."*
-
-Grazie per far parte della community Awesome Wazuh! 🚀
+**First Spotlight**: TBD (waiting for contributions!)
 
 ---
 
-**Ultimo Aggiornamento**: 31 gennaio 2026
-**Prossimo Aggiornamento**: 28 febbraio 2026
+## 💝 Special Thanks
+
+> *"Security is a collective effort. Every contribution, no matter how small, strengthens our collective defense."*
+
+Thank you for being part of the Awesome Wazuh community! 🚀
+
+---
+
+**Last Updated**: January 31, 2026
+**Next Update**: February 28, 2026
