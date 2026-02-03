@@ -193,7 +193,6 @@ Community-contributed guides for specific use cases and advanced configurations.
 Represent Wazuh in your region. Become an ambassador and share your expertise.
 
 - 🟢 [Wazuh Ambassador Program](https://wazuh.com/community/) - How to become an ambassador
-- 📧 Contact: ambassadors@wazuh.com - Apply to join the program
 - [Ambassador Activities Guide](docs/ambassador.md) - Content creation, speaking, training, partnerships
 
 ## Community
