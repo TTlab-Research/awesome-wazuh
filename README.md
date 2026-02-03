@@ -184,6 +184,7 @@ Map Wazuh capabilities to regulatory frameworks.
 
 Community-contributed guides for specific use cases and advanced configurations.
 
+- 🟡 [Wazuh Complete Guide](https://github.com/Esther7171/Wazuh-Complete-Guide) - Comprehensive Wazuh setup and configuration guide
 - 🟡 [SOAR Flow Guide](https://github.com/malwarekid/SOAR-Flow) - SOAR orchestration and automation patterns
 - 🟡 [Bruteforce Detection Guide](https://github.com/hasanaijaz/Wazuh-SIEM-Bruteforce-Detection) - Detecting and responding to brute force attacks
 
