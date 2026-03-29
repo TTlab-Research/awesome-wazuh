@@ -27,6 +27,9 @@ Wazuh is a free, open-source security monitoring platform for threat prevention,
   - [SOAR](#soar)
   - [Custom Integrations](#custom-integrations)
 - [Tools & Utilities](#tools--utilities)
+- [Maintenance](#maintenance)
+  - [Backup & Restore](#backup--restore)
+  - [Known Issues](#known-issues)
 - [Compliance](#compliance)
 - [Training & Certification](#training--certification)
 - [Guides & Tutorials](#guides--tutorials)
@@ -155,6 +158,41 @@ Connect Wazuh with external platforms for alerting, ticketing, threat intelligen
 - 🟡 [Telegram Alerting](https://github.com/bayusky/wazuh-telegram) - Telegram notification script
 - 🟡 [Custom Telegram](https://github.com/eugenehr/wazuh-custom-telegram) - Advanced Telegram alert formatting
 - 🟡 [wazuh-nmap](https://github.com/juaromu/wazuh-nmap) - Nmap network scan integration
+
+## Maintenance
+
+### Backup & Restore
+
+- 🟢 [Creating a Backup — Central Components](https://documentation.wazuh.com/current/migration-guide/files-backup/creating/wazuh-central-components.html) - Official guide: directories to back up (`/etc/wazuh-indexer/`, `/var/ossec/etc/`, certificates) using `rsync` + `tar`
+- 🟢 [Restoring Central Components](https://documentation.wazuh.com/current/migration-guide/restoring/wazuh-central-components.html) - Step-by-step restore for single node and multi-node cluster
+- 🟢 [Index Backup Management](https://wazuh.com/blog/index-backup-management/) - Official blog: OpenSearch snapshots for alert data — filesystem, S3, Azure, GCS, SLM automation
+- 🟡 [Snapshot and Restore — Practical Guide](https://sobanmalikk.medium.com/snapshot-and-restore-configuration-in-wazuh-addb9ac3180e) - Community walkthrough: `path.repo` configuration, snapshot via CLI and Dashboard UI, cron automation
+
+### Known Issues
+
+**Wazuh services fail to start after reboot on Debian/Ubuntu**
+
+A well-known issue on all-in-one installations: Wazuh services (`wazuh-indexer`, `wazuh-manager`, `wazuh-dashboard`) have no `After=` dependencies in their systemd units, causing race conditions on boot. Symptoms: dashboard returns "server is not ready yet", indexer enters `failed` state, or manager fails due to a missing PID file.
+
+- 🟡 [wazuh-indexer #201](https://github.com/wazuh/wazuh-indexer/issues/201) - Indexer fails after reboot: missing `/var/log/wazuh-indexer/gc.log` directory
+- 🟡 [wazuh-packages #1962](https://github.com/wazuh/wazuh-packages/issues/1962) - Indexer enters `failed` state on reboot (v4.4.0+)
+- 🟡 [wazuh/wazuh #31037](https://github.com/wazuh/wazuh/issues/31037) - `Permission denied` on GC log at JVM startup
+
+**Workaround**: create a systemd override to enforce startup order:
+
+```ini
+# /etc/systemd/system/wazuh-manager.service.d/override.conf
+[Unit]
+After=wazuh-indexer.service network-online.target
+```
+
+```ini
+# /etc/systemd/system/wazuh-dashboard.service.d/override.conf
+[Unit]
+After=wazuh-indexer.service network-online.target
+```
+
+Then reload: `systemctl daemon-reload`. If the indexer still needs extra time to initialize, add `ExecStartPre=/bin/sleep 15` to the dashboard override.
 
 ## Tools & Utilities
 
