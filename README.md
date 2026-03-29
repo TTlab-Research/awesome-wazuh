@@ -187,6 +187,9 @@ Community-contributed guides for specific use cases and advanced configurations.
 - 🟡 [Wazuh Complete Guide](https://github.com/Esther7171/Wazuh-Complete-Guide) - Comprehensive Wazuh setup and configuration guide
 - 🟡 [SOAR Flow Guide](https://github.com/malwarekid/SOAR-Flow) - SOAR orchestration and automation patterns
 - 🟡 [Bruteforce Detection Guide](https://github.com/hasanaijaz/Wazuh-SIEM-Bruteforce-Detection) - Detecting and responding to brute force attacks
+- 🟡 [Local Ollama in the Wazuh Dashboard](https://blog.pytoshka.me/en/post/local-ollama-in-the-wazuh-dashboard-for-llm-powered-insights/) - LLM-powered alert insights using a local Ollama instance embedded in the Wazuh Dashboard
+- 🟡 [Wazuh + AWS Bedrock + MCP (Part 1)](https://blog.pytoshka.me/en/post/wazuh-aws-bedrock-mcp-part-1/) - Integrating Wazuh with AWS Bedrock and Model Context Protocol for AI-driven security analysis
+- 🟡 [Wazuh + AWS Bedrock + MCP (Part 2)](https://blog.pytoshka.me/en/post/wazuh-aws-bedrock-mcp-part-2/) - Advanced configuration and use cases for Wazuh + AWS Bedrock + MCP integration
 
 ## Ambassador Program
 
