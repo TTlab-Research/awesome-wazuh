@@ -95,6 +95,7 @@ Wazuh is a free, open-source security monitoring platform for threat prevention,
 - 🟡 [Ghost47-coder/Wazuh-Rules](https://github.com/Ghost47-coder/Wazuh-Rules) - Custom rule set and decoders
 - 🟡 [Fortigate Rules & Decoders](https://github.com/alextibor/wazuh-fortigate-rules-decoders) - Fortigate device monitoring
 - 🟡 [Unifi Decoder](https://github.com/EvilForge/wazuh-unifi-decoder) - Ubiquiti Unifi network monitoring
+- 🟡 [Pi-hole Decoder & Rules](https://github.com/Tomo-9925/wazuh-pi-hole-decoder-and-rules) - Pi-hole DNS sinkhole monitoring and detection
 
 ### Synology NAS
 
@@ -150,6 +151,7 @@ Connect Wazuh with external platforms for alerting, ticketing, threat intelligen
 - 🟡 [wazuh-opencti](https://github.com/juaromu/wazuh-opencti) - OpenCTI threat intelligence platform
 - 🟡 [wazuh-integrations](https://github.com/maikroservice/wazuh-integrations) - Collection of custom integrations
 - 🟡 [Prometheus Exporter](https://github.com/pyToshka/wazuh-prometheus-exporter) - Prometheus metrics and monitoring
+- 🟡 [Sophos-Wazuh-SOC](https://github.com/JoernSchoenyan/Sophos-Wazuh-SOC) - Sophos firewall and endpoint integration for SOC operations
 - 🟡 [Telegram Alerting](https://github.com/bayusky/wazuh-telegram) - Telegram notification script
 - 🟡 [Custom Telegram](https://github.com/eugenehr/wazuh-custom-telegram) - Advanced Telegram alert formatting
 - 🟡 [wazuh-nmap](https://github.com/juaromu/wazuh-nmap) - Nmap network scan integration
