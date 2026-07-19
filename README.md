@@ -115,6 +115,8 @@ Decoders and rulesets for specific devices, appliances, and platforms.
 
 - 🟡 [Fortigate Rules & Decoders](https://github.com/alextibor/wazuh-fortigate-rules-decoders) - Fortigate device monitoring
 - 🟡 [Pi-hole Decoder & Rules](https://github.com/Tomo-9925/wazuh-pi-hole-decoder-and-rules) - Pi-hole DNS sinkhole monitoring and detection
+- 🟡 [Proxmox VE Rules & Decoders](https://github.com/serytia/wazuh-proxmox-detection) - Proxmox VE monitoring beyond auth: VM/CT deletion, failed backups, ransomware bursts, cluster quorum loss (MITRE-mapped, with dashboard)
+- 🟡 [Stormshield SNS Rules & Decoders](https://github.com/serytia/wazuh-stormshield-detection) - Stormshield SNS firewall: blocked connections, scans, auth brute-force, blocking IPS alarms (MITRE-mapped, with dashboard)
 - 🟡 [Synology DSM (st0rm-cr0w)](https://github.com/st0rm-cr0w/wazuh-synology-dsm-nas-decoder-and-rules) - Synology DSM decoder and rules
 - 🟡 [Synology DSM (Tomo-9925)](https://github.com/Tomo-9925/wazuh-synology-dsm-decoder-and-rules) - Alternative Synology DSM decoder implementation
 - 🟡 [Unifi Decoder](https://github.com/EvilForge/wazuh-unifi-decoder) - Ubiquiti Unifi network monitoring
