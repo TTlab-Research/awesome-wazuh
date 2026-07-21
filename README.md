@@ -157,6 +157,7 @@ Connect Wazuh with external platforms for alerting, ticketing, threat intelligen
 ### SOAR
 
 - 🟡 [Shuffle SOAR](https://shuffler.io/) - Open-source SOAR with Wazuh support
+- 🟡 [SOCTalk](https://github.com/soctalk/soctalk) - Open source SOC automation platform with built in SOAR webhook integration, ATT&CK aligned response playbooks, and analyst approval gates before external actions fire.
 - 🟢 [Shuffle + Teams Integration](https://wazuh.com/blog/integrating-wazuh-with-microsoft-teams-using-shuffle/) - SOAR-based Teams alerting
 - 🟡 [Automated Threat Detection & Response (Medium)](https://medium.com/@naseefhussain83/automated-threat-detection-response-using-wazuh-shuffle-777bee8370fc) - Real-world Wazuh + Shuffle threat response automation
 
@@ -211,6 +212,7 @@ Then reload: `systemctl daemon-reload`. If the indexer still needs extra time to
 - 🟡 [Wazuh Tools](https://github.com/branchnetconsulting/wazuh-tools) - Collection of operational utility scripts
 - 🟡 [Wazuh Auto-Generator](https://github.com/21Yeet21/wazuh-auto-generator) - Generate decoders and rules from raw log samples using deterministic pattern analysis, with bulk log analysis and in-app field extraction simulation
 - 🟡 [MCP Server Wazuh](https://github.com/gbrigandi/mcp-server-wazuh) - Model Context Protocol server for Wazuh
+- 🟡 [SOCTalk](https://github.com/soctalk/soctalk) - Open source, LLM driven SOC automation platform for MSPs and MSSPs built on Wazuh. Continuously triages, investigates, and escalates alerts through a two tier AI pipeline with human in the loop review, multi tenant Kubernetes isolation, a no code triage policy editor, and response playbooks mapped to ATT&CK techniques. Apache 2.0.
 - 🟡 [Wazuh MCP Server](https://github.com/gensecaihq/Wazuh-MCP-Server) - Alternative MCP implementation
 
 ## Compliance
