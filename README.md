@@ -108,6 +108,7 @@ General-purpose community rule collections.
 
 - 🟡 [socfortress/Wazuh-Rules](https://github.com/socfortress/Wazuh-Rules) - Community rule collection
 - 🟡 [Ghost47-coder/Wazuh-Rules](https://github.com/Ghost47-coder/Wazuh-Rules) - Custom rule set and decoders
+- 🟡 [sahilnikam2410/detection-rules](https://github.com/sahilnikam2410/detection-rules) - ATT&CK-mapped Wazuh rules with Sigma/Splunk equivalents, L1 triage playbooks and a rollback-safe installer; each rule labelled validated or draft
 
 ### Vendor-Specific Rules
 
