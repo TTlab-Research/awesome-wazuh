@@ -211,6 +211,8 @@ Then reload: `systemctl daemon-reload`. If the indexer still needs extra time to
 - 🟡 [Wazuh Tools](https://github.com/branchnetconsulting/wazuh-tools) - Collection of operational utility scripts
 - 🟡 [Wazuh Auto-Generator](https://github.com/21Yeet21/wazuh-auto-generator) - Generate decoders and rules from raw log samples using deterministic pattern analysis, with bulk log analysis and in-app field extraction simulation
 - 🟡 [MCP Server Wazuh](https://github.com/gbrigandi/mcp-server-wazuh) - Model Context Protocol server for Wazuh
+- 🟡 [Rule Doctor Lite](https://github.com/xuxu298/rule-doctor-lite) - Free, read-only script that lists Wazuh custom rules that never fired and why (incl. rules dropped at load)
+- 🟡 [wazuh-rule-precheck](https://github.com/xuxu298/wazuh-rule-precheck) - Offline static pre-check for custom rules and decoders: ignored rules, load-order traps, duplicate IDs. Browser, CLI and MCP
 - 🟡 [Wazuh MCP Server](https://github.com/gensecaihq/Wazuh-MCP-Server) - Alternative MCP implementation
 
 ## Compliance
