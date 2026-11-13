@@ -251,6 +251,7 @@ Community-contributed guides for specific use cases and advanced configurations.
 ### General
 
 - 🟡 [Wazuh Complete Guide](https://github.com/Esther7171/Wazuh-Complete-Guide) - Comprehensive Wazuh setup and configuration guide
+- 🟡 [wazuh.blog](https://wazuh.blog/en/) - Practical Wazuh articles in English and Polish: Wazuh 5 installation, migration from 4.x, Sigma rules, ruleset loading and detection engineering, each citing the official documentation
 
 ## Ambassador Program
 
