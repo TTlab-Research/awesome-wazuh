@@ -95,6 +95,7 @@ Step-by-step setup walkthroughs for Wazuh installation, configuration, and opera
 ### CI/CD & Testing
 
 - 🟢 [Wazuh QA](https://github.com/wazuh/wazuh-qa) - Automated testing and CI/CD infrastructure
+- 🟡 [DaC: Detection-Engineering as Code](https://github.com/SamsonIdowu/DaC) - GitHub Actions template that version-controls custom rules and decoders, rejects pull requests that reuse an existing rule ID, and deploys merged rulesets to the Wazuh manager over SSH
 
 ## Rules & Detection
 
